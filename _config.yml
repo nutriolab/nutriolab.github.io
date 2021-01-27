@@ -1,0 +1,6 @@
+host: 0.0.0.0
+description: |
+  We are not just a food consultant. We are the extension of your team. Together we build the future of food industry.
+sass:
+  sass_dir: _scss
+  style: compressed
