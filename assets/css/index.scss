@@ -56,11 +56,7 @@
 
 /* end of test */
 .section-one {
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
   background-color: #0D25FD;
-  padding-top: $total-padding + $logo-height;
   color: white;
 
   .headline {
@@ -79,7 +75,7 @@
   }
 
   .headline-content {
-    max-width: 345px;
+    max-width: 250px;
   }
 
   .underline {
@@ -103,15 +99,28 @@
 
   .circle {
     position: relative;
-   
-    .connector {
-      background-image: url("data:image/svg+xml,%3Csvg width='10px' height='11px' viewBox='0 0 10 11' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-dasharray='3,8'%3E%3Cline x1='5' y1='3' x2='5' y2='-7' id='Path-7' stroke='%23FFFFFF' stroke-width='10'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");    
-      height: 50%;
-      width: 10px;
+  }
+}
+
+.section-two {
+  background-color: rgb(231, 251, 105);
+
+  .box {
+    position: relative;
+
+    .slice {
       position: absolute;
-      top: 50%;
-      right: 0;
-      animation: dash-bg 50s linear infinite;
+      width: 20px;
+      height: 100%;
+      background-color: white;
     }
   }
+}
+
+.section-three {
+  background-color: rgb(23, 22, 177);
+}
+
+.section-four {
+  background-color: rgb(196, 196, 196);
 }

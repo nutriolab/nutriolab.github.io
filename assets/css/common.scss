@@ -23,17 +23,22 @@
   }
 }
 
-.content {
+.fixed-padded-content {
+  padding-top: $total-padding;
   padding-left: $total-padding + $logo-width;
   padding-right: $total-padding + $logo-width;
-  height: 100vh;
+}
+
+.fixed-padded-section {
+  padding: $total-padding + $logo-height;
+  min-height: 100vh;
+  height: auto;
 
   &:first {
     padding-top: $total-padding;
   }
+}
 
-  .contained {
-    width: 100%;
-    padding: 25px 25px 0 25px;
-  }
+.vp-container {
+  height: 100%;
 }
