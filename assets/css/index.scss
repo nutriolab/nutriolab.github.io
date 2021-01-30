@@ -13,6 +13,12 @@
   }
 }
 
+@keyframes dash-reverse {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
 @keyframes dash-bg {
   to {
     background-position-y: 1000px;
@@ -254,6 +260,7 @@
     left: 0;
     height: 100%;
     width: auto;
+    animation: dash-reverse 50s linear infinite;
   }
 
   .cta {

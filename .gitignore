@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 *.sketch
-.DS_STORE
+.DS_Store
