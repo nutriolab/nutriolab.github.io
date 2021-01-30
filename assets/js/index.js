@@ -1,11 +1,10 @@
 const bootstrap = () => {
   const landingCircle = document.getElementsByClassName('circle')[0];
   const landingCirclePosition = landingCircle.getBoundingClientRect();
-  const landingCircleWidth = landingCircle.clientWidth;
 
   setupSectionTwo();
   setupConnectorLine(landingCirclePosition, landingCircle.offsetParent.offsetTop);
-  setupEndLine(landingCirclePosition, landingCircleWidth);
+  setupEndLine(landingCirclePosition, landingCircle.clientWidth, landingCircle.clientHeight);
 };
 
 const setupSectionTwo = () => {
@@ -55,9 +54,11 @@ const setupConnectorLine = (landingCirclePosition, top) => {
   lineConnector.style.height = `${height}px`;
 }
 
-const setupEndLine = (landingCirclePosition, landingCircleWidth) => {
+const setupEndLine = (landingCirclePosition, landingCircleWidth, landingCircleHeight) => {
   const endLine = document.getElementsByClassName('line-end')[0];
-  endLine.style.width = `${landingCirclePosition.x + landingCircleWidth}px`;
+  endLine.style.width = `${landingCirclePosition.x + (landingCircleWidth * 2)}px`;
+  endLine.style.left = `-${landingCircleWidth}px`;
+  endLine.style.top = `-${landingCircleHeight * (3/4)}px`;
 }
 
 window.onload = bootstrap;
