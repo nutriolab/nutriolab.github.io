@@ -1,6 +1,11 @@
 const bootstrap = () => {
+  const landingCircle = document.getElementsByClassName('circle')[0];
+  const landingCirclePosition = landingCircle.getBoundingClientRect();
+  const landingCircleWidth = landingCircle.clientWidth;
+
   setupSectionTwo();
-  setupConnectorLine();
+  setupConnectorLine(landingCirclePosition, landingCircle.offsetParent.offsetTop);
+  setupEndLine(landingCirclePosition, landingCircleWidth);
 };
 
 const setupSectionTwo = () => {
@@ -38,8 +43,21 @@ const setupSectionTwo = () => {
   sliceThree.style.left = `${(testimonyTwoPos.x - sliceThree.clientWidth - padding).toString()}px`;
 }
 
-const setupConnectorLine = () => {
+const setupConnectorLine = (landingCirclePosition, top) => {
+  const sections = document.getElementsByClassName('fixed-padded-section');
+  
+  let height = 0;
+  for (let i = 0; i < sections.length - 1; i++) {
+    height += sections[i].clientHeight;
+  }
+  height = height - (landingCirclePosition.height / 2) - top;
+  const lineConnector = document.getElementsByClassName('line-connector')[0];
+  lineConnector.style.height = `${height}px`;
+}
 
+const setupEndLine = (landingCirclePosition, landingCircleWidth) => {
+  const endLine = document.getElementsByClassName('line-end')[0];
+  endLine.style.width = `${landingCirclePosition.x + landingCircleWidth}px`;
 }
 
 window.onload = bootstrap;

@@ -8,10 +8,11 @@ assets_js:
 <div class="fixed-padded-section section-one d-flex">
   <div class='container'>
     <div class="row vp-container align-items-start">
-      <div class="col col-sm-12 col-md-7 align-self-center mb-5 mb-md-0">
+      <div class="test col col-sm-12 col-md-7 align-self-center mb-5 mb-md-0">
         <div class='circle'>
-          {% include svg/landing_circle.svg %}
+          {% include svg/section_one/landing_circle.svg %}
         </div>
+        <div class='line-connector'></div>
       </div>
       <div class="col col-sm-12 col-md-5 align-self-center">
         <h1 class='headline'>Nutriolab</h1>
@@ -157,8 +158,16 @@ assets_js:
   </div>
 </div>
 <div class="fixed-padded-section section-four d-flex">
-  <div class="row content">
-    <p>we are not just your food consultant</p>
-    <p>we are the extension of your team</p>
+  <div class='line-end'>
+    {% include svg/section_four/quarter_circle.svg %}
+  </div>
+  <div class='cta'>consult with us</div>
+  <div class='container'>
+    <div class="row vp-container align-items-center justify-content-center">
+      <div class='text-container'>
+        <h2>we are not just your food consultant</h2>
+        <h2>we are the extension of your team</h2>
+      </div>
+    </div>
   </div>
 </div>

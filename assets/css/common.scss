@@ -3,6 +3,7 @@
 @import 'variables';
 
 .header {
+  z-index: 1;
   position: fixed;
   padding-top: $total-padding;
   padding-left: $app-container-padding;
@@ -14,6 +15,7 @@
 }
 
 .sider {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   padding: $total-padding;
@@ -30,6 +32,7 @@
 }
 
 .fixed-padded-section {
+  position: relative;
   padding: $total-padding + $logo-height;
   min-height: 100vh;
   height: auto;
