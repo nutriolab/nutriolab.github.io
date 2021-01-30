@@ -36,8 +36,6 @@ const setupSectionTwo = () => {
   const sliceThree = document.getElementsByClassName('slice-three')[0];
   sliceThree.style.top = `${(testimonyTwoPos.y).toString()}px`;
   sliceThree.style.left = `${(testimonyTwoPos.x - sliceThree.clientWidth - padding).toString()}px`;
-  
-  // sliceThree.style.left = `${testimonyTwo.getBoundingClientRect().x}px`;
 }
 
 const setupConnectorLine = () => {

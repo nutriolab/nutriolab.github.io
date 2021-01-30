@@ -102,7 +102,7 @@
   color: #0D25FD;
 
   .testimony-col {
-    overflow-y: hidden;
+    overflow: hidden;
     padding-bottom: 20px;
   }
 
@@ -232,6 +232,35 @@
 
 .section-three {
   background-color: rgb(23, 22, 177);
+  color: #E7FB69;
+
+  .headline {
+    display: inline-block;
+    box-shadow: 0 -7px 0 rgba(255, 255, 255, 1) inset;
+  }
+
+  .do {
+    display: inline-block;
+    margin-bottom: 30px;
+
+    .text {
+      margin-right: 30px;
+      text-align: right;
+
+      .description {
+        margin-left: auto;
+        max-width: 300px;
+      }
+    }
+
+    .figure {
+      text-align: center;
+
+      svg {
+        height: 100%;
+      }
+    }
+  }
 }
 
 .section-four {
