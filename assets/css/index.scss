@@ -92,11 +92,6 @@
     animation: dash 50s linear infinite;
   }
 
-  .line-cont {
-    background-color: white;
-    position: absolute;
-  }
-
   .circle {
     position: relative;
   }
@@ -104,16 +99,134 @@
 
 .section-two {
   background-color: rgb(231, 251, 105);
+  color: #0D25FD;
+
+  .testimony-col {
+    overflow-y: hidden;
+    padding-bottom: 20px;
+  }
 
   .box {
     position: relative;
+    overflow-y: clip;
 
-    .slice {
-      position: absolute;
-      width: 20px;
-      height: 100%;
-      background-color: white;
+    .slice-container {
+      margin-right: 30px;
+
+      .slice {
+        svg {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .slice-two, .slice-three {
+        position: absolute;
+        top: 0;
+      }
     }
+
+    .testimony-container {
+      width: 100%;
+
+      .testimony {
+        $border-radius: 20px;
+        background-color: rgb(196, 196, 196);
+        padding: 10px;
+        position: relative;
+        max-width: 300px;
+
+        .by {
+          display: block;
+        }
+        
+        &:first-of-type {
+          border-top-left-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+          margin-bottom: 50px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: calc(100% + 20px);
+            top: -10px;
+            left: -10px;
+            border: 2px solid #0D25FD;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+          }
+        }
+
+        &:last-of-type {
+          margin-left: auto;
+          border-top-left-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: calc(100% + 20px);
+            top: -10px;
+            left: -10px;
+            border: 2px solid #0D25FD;
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+          }
+        }
+      }
+    }
+  }
+
+  .logos {
+    $border-radius: 20px;
+    background-color: rgb(182, 198, 179);
+    margin-top: 40px;
+    border-top-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: calc(100% + 20px);
+      top: -10px;
+      left: -10px;
+      border: 2px solid #0D25FD;
+      border-top-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+
+    .logo {
+      display: inline-block;
+    }
+    
+    .one {
+      width: 120px;
+      height: 90px;
+    }
+
+    .two, .three {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: 30px;
+    box-shadow: 0 -7px 0 rgba(255, 255, 255, 1) inset;
+    font-size: 24px;
   }
 }
 
