@@ -11,9 +11,13 @@ body {
     padding-top: $total-padding;
     padding-left: $app-container-padding;
 
-    .logo {
-      width: $logo-width;
-      height: $logo-height;
+    .logo-container {
+      max-width: $logo-width;
+      max-height: $logo-height;
+
+      svg {
+        width: 100%;
+      }
     }
   }
 
@@ -24,7 +28,9 @@ body {
     padding: $total-padding;
 
     .social-media {
-      margin: 10px 0;  
+      margin: 10px 0;
+      width: $social-media-width;
+      height: $social-media-height;
     }
   }
 
@@ -53,5 +59,45 @@ body {
     position: absolute;
     bottom: 0;
     padding: 30px 30px 50px $total-padding + $logo-width;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .header {
+      padding-top: $m-total-padding;
+      padding-left: $m-app-container-padding;
+
+      .logo-container {
+        max-width: $m-logo-width;
+        max-height: $m-logo-height;
+      }
+    }
+
+    .sider {
+      padding: $m-total-padding;
+
+      .social-media {
+        width: $m-social-media-width;
+        height: $m-social-media-height;
+      }
+    }
+
+    .fixed-padded-content {
+      padding-top: $m-total-padding;
+      padding-left: $m-total-padding + $m-logo-width;
+      padding-right: $m-total-padding + $m-logo-width;
+    }
+
+    .fixed-padded-section {
+      padding: $m-total-padding + $m-logo-width;
+
+      &:first {
+        padding-top: $m-total-padding;
+      }
+    }
+    .footer {
+      padding: 30px 30px 50px $m-total-padding + $m-logo-width;
+    }
   }
 }

@@ -4,6 +4,18 @@ $total-padding: $vendor-container-padding + $app-container-padding;
 
 $logo-width: 65px;
 $logo-height: 54px;
+$social-media-width: 44px;
+$social-media-height: 44px;
 
-$m-logo-width: 20px;
-$m-logo-height: 9px;
+$line-width: 17px;
+
+/* Mobile */
+$m-vendor-container-padding: 5px;
+$m-app-container-padding: 5px;
+$m-total-padding: $m-vendor-container-padding + $m-app-container-padding;
+
+$m-logo-width: 32px;
+$m-logo-height: 25px;
+
+$m-social-media-width: 32px;
+$m-social-media-height: 32px;
