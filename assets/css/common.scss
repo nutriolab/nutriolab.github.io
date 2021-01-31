@@ -2,46 +2,56 @@
 ---
 @import 'variables';
 
-.header {
-  z-index: 1;
-  position: fixed;
-  padding-top: $total-padding;
-  padding-left: $app-container-padding;
-
-  .logo {
-    width: $logo-width;
-    height: $logo-height;
-  }
-}
-
-.sider {
-  z-index: 1;
-  position: fixed;
-  bottom: 0;
-  padding: $total-padding;
-
-  .social-media {
-    margin: 10px 0;  
-  }
-}
-
-.fixed-padded-content {
-  padding-top: $total-padding;
-  padding-left: $total-padding + $logo-width;
-  padding-right: $total-padding + $logo-width;
-}
-
-.fixed-padded-section {
+body {
   position: relative;
-  padding: $total-padding + $logo-height;
-  min-height: 100vh;
-  height: auto;
 
-  &:first {
+  .header {
+    z-index: 1;
+    position: fixed;
     padding-top: $total-padding;
-  }
-}
+    padding-left: $app-container-padding;
 
-.vp-container {
-  height: 100%;
+    .logo {
+      width: $logo-width;
+      height: $logo-height;
+    }
+  }
+
+  .sider {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    padding: $total-padding;
+
+    .social-media {
+      margin: 10px 0;  
+    }
+  }
+
+  .fixed-padded-content {
+    padding-top: $total-padding;
+    padding-left: $total-padding + $logo-width;
+    padding-right: $total-padding + $logo-width;
+  }
+
+  .fixed-padded-section {
+    position: relative;
+    padding: $total-padding + $logo-height;
+    min-height: 100vh;
+    height: auto;
+
+    &:first {
+      padding-top: $total-padding;
+    }
+  }
+
+  .vp-container {
+    height: 100%;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    padding: 30px 30px 50px $total-padding + $logo-width;
+  }
 }
