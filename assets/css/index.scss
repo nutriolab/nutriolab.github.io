@@ -71,10 +71,6 @@
   .dashed-circle {
     animation: dash 50s linear infinite;
   }
-
-  .circle {
-    position: relative;
-  }
 }
 
 .section-two {
@@ -170,7 +166,7 @@
     border-top-right-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     position: relative;
     
