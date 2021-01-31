@@ -2,6 +2,7 @@ const bootstrap = () => {
   setupSectionTwo();
   setupConnectorLine();
   setupEndLine();
+  setupScroll();
 };
 
 const setupSectionTwo = () => {
@@ -57,10 +58,34 @@ const setupEndLine = () => {
   const landingCircle = document.getElementsByClassName('circle')[0];
   const landingCirclePosition = landingCircle.getBoundingClientRect();
   const endLine = document.getElementsByClassName('line-end')[0];
+  const endLineSvg = endLine.getElementsByTagName('svg')[0];
   endLine.style.width = `${landingCirclePosition.x + (landingCircle.clientWidth * 2)}px`;
   endLine.style.left = `-${landingCircle.clientWidth}px`;
-  endLine.style.top = `-${landingCircle.clientHeight * (4/5)}px`;
+  endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`;
 }
+
+const setupScroll = () => {
+  const controller = new ScrollMagic.Controller();
+  
+  // Section 1
+  const scene1 = new ScrollMagic.Scene({
+    duration: 100,
+    offset: 50
+  });
+  controller.addScene(scene1);
+
+  // Section 2
+  const scene2 = new ScrollMagic.Scene({});
+  controller.addScene(scene2);
+
+  // Section 3
+  const scene3 = new ScrollMagic.Scene({});
+  controller.addScene(scene3);
+
+  // Section 4
+  const scene4 = new ScrollMagic.Scene({});
+  controller.addScene(scene4);
+};
 
 window.onload = bootstrap;
 window.onresize = bootstrap;
