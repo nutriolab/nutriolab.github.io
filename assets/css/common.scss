@@ -45,6 +45,7 @@ body {
     padding: $total-padding + $logo-height;
     min-height: 100vh;
     height: auto;
+    transition: background-color $transitionDuration;
 
     &:first {
       padding-top: $total-padding;

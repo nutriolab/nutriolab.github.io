@@ -67,25 +67,67 @@ const setupEndLine = () => {
 const setupScroll = () => {
   const controller = new ScrollMagic.Controller();
   
-  // Section 1
-  const scene1 = new ScrollMagic.Scene({
-    duration: 100,
-    offset: 50
+  // Common scene  
+  const sections = document.getElementsByClassName('fixed-padded-section');
+  let scenes = [];
+  let totalHeight = 0;
+  for (section of sections) {
+    const scene = new ScrollMagic.Scene({
+      duration: section.clientHeight,
+      offset: 0,
+      triggerHook: "onCenter",
+      triggerElement: section
+    })
+    scenes.push(scene);
+    totalHeight += section.clientHeight;
+  }
+  scenes[0].on('enter', () => {
+    changeCommonEls('#0D25FD', 'white');
   });
-  controller.addScene(scene1);
+  scenes[1].on('enter', () => {
+    changeCommonEls('rgb(231, 251, 105)', '#0D25FD');
+  });
+  scenes[2].on('enter', () => {
+    changeCommonEls('rgb(23, 22, 177)', 'white');
+  });
+  scenes[3].on('enter', () => {
+    changeCommonEls('rgb(196, 196, 196)', '#0D25FD');
+  });
 
-  // Section 2
-  const scene2 = new ScrollMagic.Scene({});
-  controller.addScene(scene2);
+  for (scene of scenes) {
+    controller.addScene(scene);
+  }
 
-  // Section 3
-  const scene3 = new ScrollMagic.Scene({});
-  controller.addScene(scene3);
-
-  // Section 4
-  const scene4 = new ScrollMagic.Scene({});
-  controller.addScene(scene4);
+  const lineConnector = document.getElementsByClassName('line-connector')[0];
+  const circleBorder = document.getElementById('circle-border');
+  const endLineStroke = document.getElementById('line-end-stroke')
+  const commonScene = new ScrollMagic.Scene({
+    duration: totalHeight,
+    offset: 0,
+    triggerHook: 'onCenter'
+  })
+  .on('progress', () => {
+    circleBorder.style.strokeDashoffset = window.pageYOffset;
+    lineConnector.style.webkitMaskPositionY = `${window.pageYOffset}px`;
+    lineConnector.style.maskPositionY = `${window.pageYOffset}px`;
+    endLineStroke.style.strokeDashoffset = `-${window.pageYOffset}`
+  });
+  controller.addScene(commonScene);
 };
+
+const changeCommonEls = (bgColor, strokeColor) => {
+  const sections = document.getElementsByClassName('fixed-padded-section');
+  for (section of sections) {
+    section.style.backgroundColor = bgColor;
+  }
+  const circleBorder = document.getElementById('circle-border');
+  circleBorder.style.stroke = strokeColor;
+  const lineConnector = document.getElementsByClassName('line-connector')[0];
+  lineConnector.style.backgroundColor = strokeColor;
+  const lineEnd = document.getElementById('line-end-stroke');
+  const lineEndStroke = lineEnd.getElementsByTagName('use')[0];
+  lineEndStroke.style.stroke = strokeColor;
+}
 
 window.onload = bootstrap;
 window.onresize = bootstrap;

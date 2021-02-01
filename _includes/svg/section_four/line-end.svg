@@ -5,7 +5,7 @@
             <use xlink:href="#path-11"></use>
         </mask>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="3,8">
+    <g id="line-end-stroke" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="3,8">
         <use id="Rectangle" stroke="#0D25FD" mask="url(#mask-22)" stroke-width="35" xlink:href="#path-11"></use>
     </g>
 </svg>
