@@ -1,10 +1,8 @@
 const bootstrap = () => {
-  const landingCircle = document.getElementsByClassName('circle')[0];
-  const landingCirclePosition = landingCircle.getBoundingClientRect();
-
   setupSectionTwo();
-  setupConnectorLine(landingCirclePosition, landingCircle.offsetParent.offsetTop);
-  setupEndLine(landingCirclePosition, landingCircle.clientWidth, landingCircle.clientHeight);
+  setupConnectorLine();
+  setupEndLine();
+  setupScroll();
 };
 
 const setupSectionTwo = () => {
@@ -36,29 +34,99 @@ const setupSectionTwo = () => {
   const padding = 50;
   const sliceTwo = document.getElementsByClassName('slice-two')[0];
   sliceTwo.style.top = `${(testimonyOnePos.y - (sliceTwo.clientWidth / 2)).toString()}px`;
-  sliceTwo.style.left = `${(testimonyOnePos.x + testimonyOne.clientWidth + padding).toString()}px`;
+  sliceTwo.style.left = `${(testimonyTwoPos.x + (testimonyTwo.clientWidth / 2) + padding).toString()}px`;
   const sliceThree = document.getElementsByClassName('slice-three')[0];
   sliceThree.style.top = `${(testimonyTwoPos.y).toString()}px`;
   sliceThree.style.left = `${(testimonyTwoPos.x - sliceThree.clientWidth - padding).toString()}px`;
 }
 
-const setupConnectorLine = (landingCirclePosition, top) => {
+const setupConnectorLine = () => {
+  const landingCircle = document.getElementsByClassName('circle')[0];
+  const landingCirclePosition = landingCircle.getBoundingClientRect();
   const sections = document.getElementsByClassName('fixed-padded-section');
   
   let height = 0;
   for (let i = 0; i < sections.length - 1; i++) {
     height += sections[i].clientHeight;
   }
-  height = height - (landingCirclePosition.height / 2) - top;
+  height = height - (landingCirclePosition.height / 2) - landingCircle.offsetParent.offsetTop;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.height = `${height}px`;
 }
 
-const setupEndLine = (landingCirclePosition, landingCircleWidth, landingCircleHeight) => {
+const setupEndLine = () => {
+  const landingCircle = document.getElementsByClassName('circle')[0];
+  const landingCirclePosition = landingCircle.getBoundingClientRect();
   const endLine = document.getElementsByClassName('line-end')[0];
-  endLine.style.width = `${landingCirclePosition.x + (landingCircleWidth * 2)}px`;
-  endLine.style.left = `-${landingCircleWidth}px`;
-  endLine.style.top = `-${landingCircleHeight * (3/4)}px`;
+  const endLineSvg = endLine.getElementsByTagName('svg')[0];
+  endLine.style.width = `${landingCirclePosition.x + (landingCircle.clientWidth * 2)}px`;
+  endLine.style.left = `-${landingCircle.clientWidth}px`;
+  endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`;
+}
+
+const setupScroll = () => {
+  const controller = new ScrollMagic.Controller();
+  
+  // Common scene  
+  const sections = document.getElementsByClassName('fixed-padded-section');
+  let scenes = [];
+  let totalHeight = 0;
+  for (section of sections) {
+    const scene = new ScrollMagic.Scene({
+      duration: section.clientHeight,
+      offset: 0,
+      triggerHook: "onCenter",
+      triggerElement: section
+    })
+    scenes.push(scene);
+    totalHeight += section.clientHeight;
+  }
+  scenes[0].on('enter', () => {
+    changeCommonEls('#0D25FD', 'white');
+  });
+  scenes[1].on('enter', () => {
+    changeCommonEls('rgb(231, 251, 105)', '#0D25FD');
+  });
+  scenes[2].on('enter', () => {
+    changeCommonEls('rgb(23, 22, 177)', 'white');
+  });
+  scenes[3].on('enter', () => {
+    changeCommonEls('rgb(196, 196, 196)', '#0D25FD');
+  });
+
+  for (scene of scenes) {
+    controller.addScene(scene);
+  }
+
+  const lineConnector = document.getElementsByClassName('line-connector')[0];
+  const circleBorder = document.getElementById('circle-border');
+  const endLineStroke = document.getElementById('line-end-stroke')
+  const commonScene = new ScrollMagic.Scene({
+    duration: totalHeight,
+    offset: 0,
+    triggerHook: 'onCenter'
+  })
+  .on('progress', () => {
+    circleBorder.style.strokeDashoffset = window.pageYOffset;
+    lineConnector.style.webkitMaskPositionY = `${window.pageYOffset}px`;
+    lineConnector.style.maskPositionY = `${window.pageYOffset}px`;
+    endLineStroke.style.strokeDashoffset = `-${window.pageYOffset}`
+  });
+  controller.addScene(commonScene);
+};
+
+const changeCommonEls = (bgColor, strokeColor) => {
+  const sections = document.getElementsByClassName('fixed-padded-section');
+  for (section of sections) {
+    section.style.backgroundColor = bgColor;
+  }
+  const circleBorder = document.getElementById('circle-border');
+  circleBorder.style.stroke = strokeColor;
+  const lineConnector = document.getElementsByClassName('line-connector')[0];
+  lineConnector.style.backgroundColor = strokeColor;
+  const lineEnd = document.getElementById('line-end-stroke');
+  const lineEndStroke = lineEnd.getElementsByTagName('use')[0];
+  lineEndStroke.style.stroke = strokeColor;
 }
 
 window.onload = bootstrap;

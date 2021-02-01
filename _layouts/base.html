@@ -25,19 +25,19 @@
     <meta name="author" content="Nutriolab">
     <meta name="keywords" content="" />
     <meta property="og:title" content="{{ page.title | default: 'Solar Chapter' }}">
-    <meta property="og:description" content="{{ page.description | site.description | truncate: 156 }}">
+    <meta property="og:description" content="{{ page.description | truncate: 156 }}">
     <meta property="og:image" content="{{ page.metadataImage | default: '/assets/media/logo_square.png' | absolute_url }}">
     <meta property="og:url" content="{{ page.permalink | default: page.url | absolute_url }}">
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="500" />
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="{{ page.description | site.description | truncate: 156 }}" />
+    <meta name="twitter:description" content="{{ page.description | truncate: 156 }}" />
   </head>
   <body>
     {% include header.html %}
     {% include sider.html %}
     {{ content }}
-    <!-- {% include footer.html %} -->
+    {% include footer.html %}
     <!--Javascript-->
     {% for js in layout.assets_js %}
     <script src="{{js}}"></script>
