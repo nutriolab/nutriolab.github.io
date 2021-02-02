@@ -83,15 +83,19 @@ const setupScroll = () => {
   }
   scenes[0].on('enter', () => {
     changeCommonEls('#0D25FD', 'white');
+    changeSocialMediaColors('#E7FB69');
   });
   scenes[1].on('enter', () => {
     changeCommonEls('rgb(231, 251, 105)', '#0D25FD');
+    changeSocialMediaColors('#0D25FD');
   });
   scenes[2].on('enter', () => {
     changeCommonEls('rgb(23, 22, 177)', 'white');
+    changeSocialMediaColors('white');
   });
   scenes[3].on('enter', () => {
     changeCommonEls('rgb(196, 196, 196)', '#0D25FD');
+    changeSocialMediaColors('#0D25FD');
   });
 
   for (scene of scenes) {
@@ -127,6 +131,16 @@ const changeCommonEls = (bgColor, strokeColor) => {
   const lineEnd = document.getElementById('line-end-stroke');
   const lineEndStroke = lineEnd.getElementsByTagName('use')[0];
   lineEndStroke.style.stroke = strokeColor;
+}
+
+const changeSocialMediaColors = color => {
+  const socialMediaIcons = document.getElementsByClassName('social-media');
+  for (socialMediaIcon of socialMediaIcons) {
+    const paths = socialMediaIcon.getElementsByTagName('path');
+    for (path of paths) {
+      path.style.stroke = color;
+    }
+  }
 }
 
 window.onload = bootstrap;
