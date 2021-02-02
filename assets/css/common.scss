@@ -11,16 +11,31 @@ body {
   .header {
     z-index: 1;
     position: fixed;
+    width: 100%;
     padding-top: $total-padding;
     padding-left: $app-container-padding;
 
     .logo-container {
+      display: inline-block;
       max-width: $logo-width;
       max-height: $logo-height;
 
       svg {
         width: 100%;
         height: 100%;
+      }
+    }
+
+    .lang-container {
+      float: right;
+      vertical-align: middle;
+
+      .chosen-lang {
+        margin-right: 5px;
+      }
+
+      .chosen-lang, .lang-indicator {
+        display: inline-block;
       }
     }
   }
