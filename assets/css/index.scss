@@ -53,8 +53,8 @@
 }
 
 .section-two {
-  background-color: rgb(231, 251, 105);
-  color: #0D25FD;
+  background-color: $yellow;
+  color: $blue;
 
   .testimony-col {
     overflow: hidden;
@@ -196,25 +196,14 @@
     padding-right: $line-width;
     
     .do {
-      display: inline-block;
       margin-bottom: 30px;
+      text-align: right;
       
       .text {
-        margin-right: 15px;
-        text-align: right;
-        
         .description {
           margin-left: auto;
           max-width: 300px;
         }
-      }
-    }
-
-    .figure {
-      text-align: center;
-
-      svg {
-        width: 100%;
       }
     }
   }
@@ -251,6 +240,14 @@
     position: absolute;
     bottom: 20%;
     right: 0;
-    width: 20%;
+    width: 50%;
+    max-width: 200px;
+    padding-right: 10px;
   }
+}
+
+.footer-container {
+  background-color:rgb(196, 196, 196);
+  transition: background-color $transitionDuration;
+  height: $total-footer;
 }

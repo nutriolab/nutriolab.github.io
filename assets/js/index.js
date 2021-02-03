@@ -103,7 +103,7 @@ const setupScroll = () => {
   }
 
   const lineConnector = document.getElementsByClassName('line-connector')[0];
-  const circleBorder = document.getElementById('circle-border');
+  const circleBorder = document.getElementsByClassName('dashed-circle')[0];
   const endLineStroke = document.getElementById('line-end-stroke')
   const commonScene = new ScrollMagic.Scene({
     duration: totalHeight,
@@ -120,7 +120,9 @@ const setupScroll = () => {
 };
 
 const changeCommonEls = (bgColor, strokeColor) => {
-  const sections = document.getElementsByClassName('fixed-padded-section');
+  const sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
+  const footerContainer = document.getElementsByClassName('footer-container')[0];
+  sections.push(footerContainer);
   for (section of sections) {
     section.style.backgroundColor = bgColor;
   }
@@ -131,6 +133,10 @@ const changeCommonEls = (bgColor, strokeColor) => {
   const lineEnd = document.getElementById('line-end-stroke');
   const lineEndStroke = lineEnd.getElementsByTagName('use')[0];
   lineEndStroke.style.stroke = strokeColor;
+  const strokeComms = document.getElementsByClassName('stroke-comm');
+  for (strokeComm of strokeComms) {
+    strokeComm.style.stroke = strokeColor;
+  }
 }
 
 const changeSocialMediaColors = color => {
