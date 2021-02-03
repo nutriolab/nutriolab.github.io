@@ -26,9 +26,11 @@ body {
       }
     }
 
-    .lang-container {
+    #lang-container {
       float: right;
       vertical-align: middle;
+      position: relative;
+      padding: 5px;
 
       .chosen-lang {
         margin-right: 5px;
@@ -36,6 +38,32 @@ body {
 
       .chosen-lang, .lang-indicator {
         display: inline-block;
+      }
+
+      #lang-options {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        visibility: visible;
+        transition: height 0.5s;
+
+        .lang-option {
+          display: block;
+        }
+
+        .lang-option.chosen {
+          span {
+            box-shadow: 0 -4px 0 $yellow inset;
+          }
+        }
+      }
+
+      #lang-options.closed {
+        visibility: hidden;
       }
     }
   }
@@ -99,7 +127,7 @@ body {
     transition: background-color $transitionDuration;
 
     .top {
-      height: 100vh;
+      min-height: 100vh;
     }
   }
 

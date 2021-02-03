@@ -8,6 +8,16 @@ const setup = () => {
   closeButton.onclick = () => {
     menu.className = 'closed';
   }
+
+  const langContainer = document.getElementById('lang-container');
+  const langOptions = document.getElementById('lang-options');
+  langContainer.onclick = () => {
+    if (langOptions.className == 'closed') {
+      langOptions.className = '';
+    } else {
+      langOptions.className = 'closed';
+    }
+  }
 };
 
 setup();
