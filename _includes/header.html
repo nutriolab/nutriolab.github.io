@@ -6,9 +6,13 @@
         <path class='stroke-comm' d="M0 50H65M0 39H65" stroke="#FFFFFF" stroke-width="7"/>
       </svg>
     </div>
-    <div class='lang-container d-flex'>
+    <div id='lang-container' class='d-flex'>
       <span class='chosen-lang'>🇬🇧</span>
-      {% include svg/lang_indicator.svg %}      
+      {% include svg/lang_indicator.svg %} 
+      <div id='lang-options' class='closed'>
+        <div class='lang-option chosen'><span>🇬🇧</span></div>
+        <div class='lang-option'><span>🇮🇩</span></div>
+      </div>     
     </div>
   </div>
 </div>
