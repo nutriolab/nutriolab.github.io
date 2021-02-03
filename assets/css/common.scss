@@ -63,14 +63,18 @@ body {
 
   .fixed-padded-section {
     position: relative;
-    padding: $total-padding + $logo-height;
-    min-height: 100vh;
+    padding: 0 $total-padding + $logo-height;
+    min-height: 150vh;
     height: auto;
     transition: background-color $transitionDuration;
 
-    &:first {
-      padding-top: $total-padding;
+    .top {
+      height: 100vh;
     }
+  }
+
+  .fixed-padded-section.last {
+    min-height: 100vh;
   }
 
   .vp-container {

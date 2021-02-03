@@ -133,6 +133,10 @@ const changeCommonEls = (bgColor, strokeColor) => {
   const lineEnd = document.getElementById('line-end-stroke');
   const lineEndStroke = lineEnd.getElementsByTagName('use')[0];
   lineEndStroke.style.stroke = strokeColor;
+  const strokeComms = document.getElementsByClassName('stroke-comm');
+  for (strokeComm of strokeComms) {
+    strokeComm.style.stroke = strokeColor;
+  }
 }
 
 const changeSocialMediaColors = color => {
