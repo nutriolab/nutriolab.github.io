@@ -40,6 +40,36 @@ body {
     }
   }
 
+  #menu {
+    position: fixed;
+    height: 100vh;
+    background-color: $yellow;
+    padding: 25px 40px;
+    min-width: 25%;
+    color: $blue;
+    font-family: Alata;
+    font-size: 30px;
+    transition: transform 0.5s;
+    z-index: 2;
+
+    .menu-header {
+      height: 60px;
+      margin-bottom: 20px;
+
+      #close-button {
+        float: right;
+      }
+    }
+
+    .option {
+      margin: 5px 0;
+    }
+  }
+
+  #menu.closed {
+    transform: translateX(-100%);
+  }
+
   .sider {
     z-index: 1;
     position: fixed;
