@@ -12,13 +12,21 @@ $social-media-height: 44px;
 
 $line-width: 17px;
 
+$footer-top: 30px;
+$footer-bottom: 70px;
+$total-footer: $footer-top + $footer-bottom;
+
 /* Mobile */
 $m-vendor-container-padding: 5px;
 $m-app-container-padding: 5px;
 $m-total-padding: $m-vendor-container-padding + $m-app-container-padding;
 
-$m-logo-width: 32px;
+$m-logo-width: 40px;
 $m-logo-height: 25px;
 
 $m-social-media-width: 32px;
 $m-social-media-height: 32px;
+
+$m-footer-top: 15px;
+$m-footer-bottom: 40px;
+$m-total-footer: $m-footer-top + $m-footer-bottom;

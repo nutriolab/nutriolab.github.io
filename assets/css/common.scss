@@ -45,6 +45,7 @@ body {
     position: fixed;
     bottom: 0;
     padding: $total-padding;
+    padding-bottom: $total-footer;
 
     .social-media {
       margin: 10px 0;
@@ -79,7 +80,7 @@ body {
   .footer {
     position: absolute;
     bottom: 0;
-    padding: 30px 30px 50px $total-padding + $logo-width;
+    padding: $footer-top 30px $footer-bottom $total-padding + $logo-width;
   }
 }
 
@@ -97,6 +98,7 @@ body {
 
     .sider {
       padding: $m-total-padding;
+      padding-bottom: $m-total-footer;
 
       .social-media {
         width: $m-social-media-width;
@@ -117,8 +119,9 @@ body {
         padding-top: $m-total-padding;
       }
     }
+
     .footer {
-      padding: 30px 30px 50px $m-total-padding + $m-logo-width;
+      padding: $m-footer-top 30px $m-footer-bottom $total-padding + $m-logo-width;
     }
   }
 }
