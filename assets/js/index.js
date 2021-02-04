@@ -1,3 +1,5 @@
+const debug = false;
+
 const bootstrap = () => {
   setupSectionTwo();
   setupConnectorLine();
@@ -43,7 +45,9 @@ const setupSectionTwo = () => {
 const setupConnectorLine = () => {
   const landingCircle = document.getElementsByClassName('circle')[0];
   const landingCirclePosition = landingCircle.getBoundingClientRect();
-  const sections = document.getElementsByClassName('fixed-padded-section');
+  let sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
+  const extraSections = Array.from(document.getElementsByClassName('extra-section'));
+  sections = sections.concat(extraSections);
   
   let height = 0;
   for (let i = 0; i < sections.length - 1; i++) {
@@ -65,17 +69,20 @@ const setupEndLine = () => {
 }
 
 const setupScroll = () => {
-  const controller = new ScrollMagic.Controller();
+  const controller = new ScrollMagic.Controller({
+    addIndicators: debug
+  });
   
   // Common scene  
   const sections = document.getElementsByClassName('fixed-padded-section');
   let scenes = [];
   let totalHeight = 0;
+  const extraSection = document.getElementsByClassName('extra-section')[0];
   for (section of sections) {
     const scene = new ScrollMagic.Scene({
-      duration: section.clientHeight,
+      duration: section.clientHeight + extraSection.clientHeight,
       offset: 0,
-      triggerHook: "onCenter",
+      triggerHook: "onEnter",
       triggerElement: section
     })
     scenes.push(scene);
@@ -120,7 +127,9 @@ const setupScroll = () => {
 };
 
 const changeCommonEls = (bgColor, strokeColor) => {
-  const sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
+  let sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
+  const extraSections = Array.from(document.getElementsByClassName('extra-section'));
+  sections = sections.concat(extraSections);
   const footerContainer = document.getElementsByClassName('footer-container')[0];
   sections.push(footerContainer);
   for (section of sections) {

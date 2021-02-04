@@ -91,6 +91,12 @@ body {
 
     .option {
       margin: 5px 0;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 
@@ -122,13 +128,9 @@ body {
   .fixed-padded-section {
     position: relative;
     padding: 0 $total-padding + $logo-height;
-    min-height: 150vh;
+    min-height: 100vh;
     height: auto;
     transition: background-color $transitionDuration;
-
-    .top {
-      min-height: 100vh;
-    }
   }
 
   .fixed-padded-section.last {
