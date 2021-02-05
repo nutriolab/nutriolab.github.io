@@ -120,7 +120,7 @@ body {
   }
 
   .fixed-padded-content {
-    padding-top: $total-padding;
+    padding-top: $total-padding + $logo-height;
     padding-left: $total-padding + $logo-width;
     padding-right: $total-padding + $logo-width;
   }
@@ -141,9 +141,8 @@ body {
     height: 100%;
   }
 
-  .footer {
-    position: absolute;
-    bottom: 0;
+  .footer-container {
+    height: $total-footer;
     padding: $footer-top 30px $footer-bottom $total-padding + $logo-width;
   }
 }
@@ -184,7 +183,7 @@ body {
       }
     }
 
-    .footer {
+    .footer-container {
       padding: $m-footer-top 30px $m-footer-bottom $total-padding + $m-logo-width;
     }
   }

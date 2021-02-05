@@ -1,0 +1,54 @@
+---
+---
+@import 'variables';
+
+.stroke-comm, .social-media path {
+  stroke: $blue;
+}
+
+.footer-container {
+  color: $blue;
+}
+
+.contact {
+  min-height: 100vh;
+  background-color: white;
+  color: $blue;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .input-container {
+    margin-bottom: 25px;
+
+    .label {
+      margin-bottom: 5px;
+      .required {
+        color: red;
+      }
+    }
+
+    .input {
+      input, textarea {
+        width: 100%;
+        border: 0;
+        background-color: #F8F8F8;
+        padding: 5px 10px;
+      }
+
+      .helper-message.hide {
+        display: none;
+      }
+    }
+  }
+
+  .send-button {
+    background-color: $blue;
+    padding: 10px 50px;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
+}

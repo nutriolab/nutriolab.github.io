@@ -1,0 +1,70 @@
+---
+layout: base
+assets_css:
+  - assets/css/contact.css
+assets_js:
+  - assets/js/contact.js
+---
+<div class='fixed-padded-content contact'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-12'>
+        <h1 class='title'>Consult with us</h1>
+      </div>
+      <div class='col-12'>
+        <div class='input-container'>
+          <div class='label'>
+            <b>Full Name</b>
+            <span class='required'>*</span>
+          </div>
+          <div class='input'>
+            <input name="fullName" placeholder="Type your full name here"/>
+            <small id='fullName-helper-message' class='helper-message hide'>Required field</small>
+          </div>
+        </div>
+      </div>
+      <div class='col-12'>
+        <div class='input-container'>
+          <div class='label'>
+            <b>Email</b>
+            <span class='required'>*</span>
+          </div>
+          <div class='input'>
+            <input name="email" placeholder="Type your email here" />
+            <small id='email-helper-message' class='helper-message hide'>Required field</small>
+          </div>
+        </div>
+      </div>
+      <div class='col-12'>
+        <div class='input-container'>
+          <div class='label'>
+            <b>Subject</b>
+            <span class='required'>*</span>
+          </div>
+          <div class='input'>
+            <input name="subject" placeholder="Type your subject here" />
+            <small id='subject-helper-message' class='helper-message hide'>Required field</small>
+          </div>
+        </div>
+      </div>
+      <div class='col-12'>
+        <div class='input-container'>
+          <div class='label'>
+            <b>Message</b>
+            <span class="required">*</span>
+          </div>
+          <div class='input'>
+            <textarea name='message' placeholder="Type your message here" rows="5"></textarea>
+            <small id='message-helper-message' class='helper-message hide'>Required field</small>
+          </div>
+        </div>
+      </div>
+      <div class='col-12'>
+        <!-- Calend.ly -->
+      </div>
+      <div class='col-12 text-right'>
+        <button class='send-button'>Send</button>
+      </div>
+    </div>
+  </div>
+</div>
