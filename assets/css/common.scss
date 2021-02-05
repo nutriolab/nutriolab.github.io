@@ -170,7 +170,7 @@ body {
     }
 
     .fixed-padded-content {
-      padding-top: $m-total-padding;
+      padding-top: $m-total-padding + $m-logo-height;
       padding-left: $m-total-padding + $m-logo-width;
       padding-right: $m-total-padding + $m-logo-width;
     }
