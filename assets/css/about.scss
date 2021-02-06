@@ -2,7 +2,97 @@
 ---
 @import 'variables';
 
+.stroke-comm, .social-media path {
+  stroke: $blue;
+}
+
+.footer-container {
+  background-color: $yellow;
+  transition: background-color $transitionDuration;
+  height: $total-footer;
+  color: $blue;
+}
+
+.line-end {
+  position: absolute;
+  top: 0;
+  
+  svg {
+    height: 100%;
+  }
+
+  &.line-end-top {
+    top: -50%;
+    left: -48%;
+  }
+
+  &.line-end-bottom {
+    right: -50%;
+  }
+}
+
+.top-about-container {
+  position: relative;
+}
+
 .about {
   background-color: $yellow;
-  min-height: 100vh;
+  color: $blue;
+  overflow-x: hidden;
+
+  .about-us-title {
+    margin-bottom: 50px;
+  }
+
+  .vision {
+    margin-bottom: 50px;
+  }
+
+  .values {
+    display: inline-block;
+
+    .value {
+      $borderRadius: 5px;
+      margin-bottom: 10px;
+      border: 1px dashed $blue;
+      border-top-right-radius: $borderRadius;
+      border-bottom-left-radius: $borderRadius;
+      border-bottom-right-radius: $borderRadius;
+
+      .value-text {
+        display: inline-block;
+        background-color: $gray;
+        padding: 5px 15px;
+        border-top-right-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+      }
+    }
+  }
+}
+
+.cta-container {
+  background-color: $yellow;
+  position: relative;
+  padding: 20px;
+
+  .cta {
+    color: $blue;
+    box-shadow: 0 -5px 0 $gray inset;
+    position: absolute;
+    padding-right: 10px;
+  }
+
+  .cta-1 {
+    bottom: 20%;
+    right: -25%;
+    width: 100%;
+  }
+
+  .cta-2 {
+    bottom: 20%;
+    right: 0%;
+    width: 50%;
+    max-width: 200px;
+  }
 }
