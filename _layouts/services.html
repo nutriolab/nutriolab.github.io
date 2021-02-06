@@ -1,0 +1,70 @@
+---
+layout: base
+assets_css:
+  - assets/css/services.css
+assets_js:
+  - assets/js/services.js
+---
+<div class='fixed-padded-content services'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-12'>
+        <h1>Services</h1>
+      </div>
+      <div class='col-12'>
+        {% for package in page.packages %}
+          <div class='package'>
+            <div class='title'>
+              <span>{{ package.name }}</span>
+            </div>
+            {% if forloop.index == 1 %}
+            <div class='options'>
+            {% else %}
+            <div class='options hide'>
+            {% endif %}
+              <div class='row d-flex align-items-stretch mb-3'>
+                {% for option in package.options %}
+                  <div class='col-xs-12 col-sm-6 col-md-4 mb-3'>
+                    <div class='option d-flex flex-column'>
+                      <div class='option-title'>
+                        <span class='option-no'>
+                        {{ option.title }}
+                        </span>
+                        <span class='option-name'>
+                          {{ option.name }}
+                        </span>
+                      </div>
+                      <div class='option-desc'>
+                        {{ option.description }}
+                      </div>
+                      <div class='features'>
+                        {% for service in option.services %}
+                          <div class='feature'>
+                            {{ service }}
+                          </div>
+                        {% endfor %}
+                      </div>
+                      {% if option.price.value and option.price.cardinal %}
+                      <div class='price mt-auto ml-auto d-flex'>
+                        <div class='currency align-self-start'><small>idr</small></div>
+                        <div class='value'>{{ option.price.value }}</div>
+                        <div class='cardinal align-self-end'>{{ option.price.cardinal }}</div>
+                      </div>
+                      {% else %}
+                      <div class='price mt-auto ml-auto'>
+                        <div class='note'>
+                          <i><small>contact us for pricing</small></i>
+                        </div>
+                      </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
