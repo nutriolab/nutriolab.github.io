@@ -189,7 +189,7 @@
 }
 
 .section-three {
-  background-color: rgb(23, 22, 177);
+  background-color: $darkBlue;
   color: white;
 
   .headline {
@@ -215,7 +215,7 @@
 }
 
 .section-four {
-  background-color: rgb(196, 196, 196);
+  background-color: $gray;
   overflow: hidden;
 
   .text-container {
@@ -255,4 +255,5 @@
   background-color:rgb(196, 196, 196);
   transition: background-color $transitionDuration;
   height: $total-footer;
+  color: $blue;
 }
