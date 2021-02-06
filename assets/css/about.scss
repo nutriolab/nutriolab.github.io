@@ -16,19 +16,8 @@
 .line-end {
   position: absolute;
   top: 0;
-  
-  svg {
-    height: 100%;
-  }
-
-  &.line-end-top {
-    top: -50%;
-    left: -48%;
-  }
-
-  &.line-end-bottom {
-    right: -50%;
-  }
+  height: 100%;
+  width: auto;
 }
 
 .top-about-container {
