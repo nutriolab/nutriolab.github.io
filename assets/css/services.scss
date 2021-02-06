@@ -87,3 +87,20 @@
     }
   }
 }
+
+.cta-container {
+  background-color: $darkBlue;
+  position: relative;
+  padding: 20px;
+
+  .cta {
+    color:white;
+    box-shadow: 0 -5px 0 $yellow inset;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    width: 50%;
+    max-width: 200px;
+    padding-right: 10px;
+  }
+}

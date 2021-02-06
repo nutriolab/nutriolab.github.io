@@ -5,6 +5,10 @@
 // font-family: 'Alata', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 
+#logo, #close-button, .select-lang, .lang-option {
+  cursor: pointer;
+}
+
 body {
   position: relative;
 
@@ -116,6 +120,7 @@ body {
       width: $social-media-width;
       height: $social-media-height;
       transition: stroke $transitionDuration;
+      cursor: pointer;
     }
   }
 
