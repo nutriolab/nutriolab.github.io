@@ -42,12 +42,12 @@
     {{ content }}
     {% include footer.html %}
     <!--Javascript-->
-    <script src="{{ "/assets/js/common.js" | relative_url }}"></script>
     {% for js in layout.assets_js %}
     <script src="{{js}}"></script>
     {% endfor %}
     {% for js in page.assets_js %}
     <script src="{{js}}"></script>
     {% endfor %}
+    <script src="{{ "/assets/js/common.js" | relative_url }}"></script>
   </body>
 </html>

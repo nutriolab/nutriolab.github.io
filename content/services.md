@@ -11,7 +11,7 @@ packages:
         services:
           - ++ Consultation (50 min)
         price:
-          value: 750
+          value: '750'
           cardinal: k
       - title: 102
         name: Standard
@@ -20,7 +20,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
         price:
-          value: 1,25
+          value: '1,25'
           cardinal: mio
       - title: 103
         name: Premium
@@ -37,7 +37,7 @@ packages:
         services:
           - ++ Consultation (50 min)
         price:
-          value: 1,5
+          value: '1,5'
           cardinal: mio
       - title: 102
         name: Standard
@@ -46,7 +46,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
         price:
-          value: 2,0
+          value: '2,0'
           cardinal: mio
       - title: 103
         name: Premium
@@ -67,7 +67,7 @@ packages:
         services:
           - ++ Consultation (50 min)
         price:
-          value: 1
+          value: '1'
           cardinal: mio
       - title: 102
         name: Standard
@@ -76,7 +76,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
         price:
-          value: 1,5
+          value: '1,5'
           cardinal: mio
       - title: 103
         name: Premium
@@ -97,7 +97,7 @@ packages:
         services:
           - ++ Consultation (50 min)
         price:
-          value: 1
+          value: '1'
           cardinal: mio
       - title: 102
         name: Standard
@@ -106,7 +106,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
         price:
-          value: 1,5
+          value: '1,5'
           cardinal: mio
       - title: 103
         name: Premium
@@ -124,7 +124,7 @@ packages:
         services:
           - ++ Consultation (50 min)
         price:
-          value: 1
+          value: '1'
           cardinal: mio
       - title: 102
         name: Standard
@@ -133,7 +133,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
         price:
-          value: 1,5
+          value: '1,5'
           cardinal: mio
       - title: 103
         name: Premium
