@@ -25,4 +25,5 @@ const bootstrap = () => {
   setup();
 }
 
-window.onload = bootstrap();
+window.onload = bootstrap;
+window.onresize = bootstrap;
