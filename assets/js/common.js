@@ -22,7 +22,7 @@ const commonSetup = () => {
 
 const bootstrap = () => {
   commonSetup();
-  setup();
+  typeof setup !== 'undefined' && setup();
 }
 
 window.onload = bootstrap;
