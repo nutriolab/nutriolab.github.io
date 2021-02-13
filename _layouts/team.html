@@ -1,0 +1,59 @@
+---
+layout: base
+assets_css:
+  - assets/css/team.css
+assets_js:
+  - assets/js/team.js
+---
+<div class='fixed-padded-content team'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-10'>
+        {% for group in page.groups %}
+        <div class='group'>
+          <span class='name'>
+            {{ group.name }}
+          </span>
+        </div>
+        <div class='row'>
+          {% for member in group.members %}
+          <div class='col-xs-12 col-md-6'>
+            <div class='member'>
+              <div class='profile-pict' style='background-image: url("{{ member.image }}")'></div>
+              <div class='details'>
+                <span class='name'>
+                  {{ member.name }}
+                </span>
+                <div class='section'>
+                  <b>
+                    Education
+                  </b>
+                  <div class='content'>
+                    {{ member.education }}
+                  </div>
+                </div>
+                <div class='section'>
+                  <b>
+                    Expertise
+                  </b>
+                  <div class='content'>
+                    {{ member.expertise }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class='col-2'>
+        <h3>
+          <b>
+            Meet our team!
+          </b>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>

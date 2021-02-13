@@ -2,15 +2,36 @@
 ---
 @import 'variables';
 
-// font-family: 'Alata', sans-serif;
-// font-family: 'Open Sans', sans-serif;
-
 #logo, #close-button, .select-lang, .lang-option {
   cursor: pointer;
 }
 
+.nutriolab-text {
+  font-size: 40px;
+  font-family: STHeitiSC-Medium, Heiti SC;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  display: inline-block;
+}
+
+.blue {
+  color: $blue;
+}
+
+.white {
+  color: white;
+}
+
+.cta {
+  a { 
+    text-decoration: none; 
+    color: inherit;
+  } 
+}
+
 body {
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 
   .header {
     z-index: 1;
@@ -89,7 +110,7 @@ body {
       margin-bottom: 20px;
 
       #close-button {
-        float: right;
+        vertical-align: baseline;
       }
     }
 

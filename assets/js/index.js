@@ -1,6 +1,4 @@
-const debug = false;
-
-const bootstrap = () => {
+const setup = () => {
   setupSectionTwo();
   setupConnectorLine();
   setupEndLine();
@@ -69,9 +67,8 @@ const setupEndLine = () => {
 }
 
 const setupScroll = () => {
-  const controller = new ScrollMagic.Controller({
-    addIndicators: debug
-  });
+  // const controller = new ScrollMagic.Controller({ addIndicators: debug });
+  const controller = new ScrollMagic.Controller();
   
   // Common scene  
   const sections = document.getElementsByClassName('fixed-padded-section');
@@ -86,7 +83,7 @@ const setupScroll = () => {
       triggerElement: section
     })
     scenes.push(scene);
-    totalHeight += section.clientHeight;
+    totalHeight += section.clientHeight + extraSection.clientHeight;
   }
   scenes[0].on('enter', () => {
     changeCommonEls('#0D25FD', 'white');
@@ -157,6 +154,3 @@ const changeSocialMediaColors = color => {
     }
   }
 }
-
-window.onload = bootstrap;
-window.onresize = bootstrap;

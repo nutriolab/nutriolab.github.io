@@ -29,6 +29,12 @@
   color: $blue;
   overflow-x: hidden;
 
+  .top {
+    .cta {
+      text-align: right;
+    }
+  }
+
   .about-us-title {
     margin-bottom: 50px;
   }
@@ -55,6 +61,7 @@
         border-top-right-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
         border-bottom-right-radius: $borderRadius;
+        font-weight: bold;
       }
     }
   }
@@ -70,12 +77,6 @@
     box-shadow: 0 -5px 0 $gray inset;
     position: absolute;
     padding-right: 10px;
-  }
-
-  .cta-1 {
-    bottom: 20%;
-    right: -25%;
-    width: 100%;
   }
 
   .cta-2 {

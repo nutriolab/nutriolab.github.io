@@ -49,7 +49,8 @@
   .cta {
     margin-top: 100px;
     box-shadow: 0 -7px 0 rgba(231, 251, 105, 0.8) inset;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   #circle-border {
@@ -195,6 +196,11 @@
   .headline {
     display: inline-block;
     box-shadow: 0 -7px 0 rgba(255, 255, 255, 1) inset;
+    color: $yellow;
+  }
+
+  .title {
+    color: $yellow;
   }
 
   .left-container {
@@ -208,6 +214,7 @@
         .description {
           margin-left: auto;
           max-width: 300px;
+          color: $yellow;
         }
       }
     }

@@ -1,4 +1,4 @@
-const setup = () => {
+const commonSetup = () => {
   const menu = document.getElementById('menu');
   const logo = document.getElementById('logo');
   logo.onclick = () => {
@@ -20,4 +20,10 @@ const setup = () => {
   }
 };
 
-setup();
+const bootstrap = () => {
+  commonSetup();
+  typeof setup !== 'undefined' && setup();
+}
+
+window.onload = bootstrap;
+window.onresize = bootstrap;
