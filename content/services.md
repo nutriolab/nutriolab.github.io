@@ -29,7 +29,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
           - ++ Testing / Analysis
-  - name: Package B - Food Processing I
+  - name: Package B - Food Processing
     options:
       - title: 101
         name: Basic
