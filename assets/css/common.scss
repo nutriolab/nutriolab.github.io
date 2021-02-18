@@ -173,7 +173,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $smallBreakpoint) {
   body {
     .header {
       padding-top: $m-total-padding;

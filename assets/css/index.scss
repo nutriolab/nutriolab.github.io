@@ -264,3 +264,16 @@
   height: $total-footer;
   color: $blue;
 }
+
+
+@media (max-width: $smallBreakpoint) {
+  .section-two {
+    .box {
+      .testimony-container {
+        .testimony {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
