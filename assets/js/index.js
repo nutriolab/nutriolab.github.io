@@ -9,13 +9,6 @@ const setupSectionTwo = () => {
   const box = document.getElementsByClassName('box')[0];
   const testimonyContainer = document.getElementsByClassName('testimony-container')[0];
 
-  // Float slices
-  const slices = document.getElementsByClassName('slice');
-  for (slice of slices) {
-    const svg = slice.getElementsByTagName('svg')[0];
-    svg.style.height = `${testimonyContainer.clientHeight}px`;
-  }
-
   // Position slices
   const boxPosition = box.getBoundingClientRect();
   const testimonyOne = document.getElementsByClassName('testimony')[0];
@@ -34,7 +27,7 @@ const setupSectionTwo = () => {
   const padding = 50;
   const sliceTwo = document.getElementsByClassName('slice-two')[0];
   sliceTwo.style.top = `${(testimonyOnePos.y - (sliceTwo.clientWidth / 2)).toString()}px`;
-  sliceTwo.style.left = `${(testimonyTwoPos.x + (testimonyTwo.clientWidth / 2) + padding).toString()}px`;
+  sliceTwo.style.left = `${(testimonyOnePos.x + testimonyOne.clientWidth + 10).toString()}px`;
   const sliceThree = document.getElementsByClassName('slice-three')[0];
   sliceThree.style.top = `${(testimonyTwoPos.y).toString()}px`;
   sliceThree.style.left = `${(testimonyTwoPos.x - sliceThree.clientWidth - padding).toString()}px`;
@@ -67,7 +60,7 @@ const setupEndLine = () => {
 }
 
 const setupScroll = () => {
-  // const controller = new ScrollMagic.Controller({ addIndicators: debug });
+  // const controller = new ScrollMagic.Controller({ addIndicators: true });
   const controller = new ScrollMagic.Controller();
   
   // Common scene  

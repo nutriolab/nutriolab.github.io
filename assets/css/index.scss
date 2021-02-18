@@ -26,14 +26,12 @@
   .headline {
     font-weight: 400;
     letter-spacing: 4px;
-    font-size: 50px;
     line-height: 50px;
     margin-bottom: 0px;
   }
 
   .sub-headline {
     font-weight: 300;
-    font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 25px;
   }
@@ -263,4 +261,17 @@
   transition: background-color $transitionDuration;
   height: $total-footer;
   color: $blue;
+}
+
+
+@media (max-width: $smallBreakpoint) {
+  .section-two {
+    .box {
+      .testimony-container {
+        .testimony {
+          max-width: 200px;
+        }
+      }
+    }
+  }
 }

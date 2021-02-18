@@ -23,6 +23,7 @@
     font-size: 24px;
     box-shadow: 0 -7px 0 rgba(0, 0, 0, 0.4) inset;
     line-height: 1;
+    font-weight: bolder;
   }
 
   .member {
@@ -33,7 +34,7 @@
     border-bottom-left-radius: $borderRadius;
     border-bottom-right-radius: $borderRadius;
     border: 1px dashed white;
-    margin-bottom: 25px;
+    height: 100%;
 
     .profile-pict {
       background-size: cover;

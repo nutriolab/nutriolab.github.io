@@ -15,20 +15,19 @@ assets_js:
         {% for package in page.packages %}
           <div class='package'>
             <div class='title'>
-              <span>{{ package.name }}</span>
+              <span>
+                {{ package.name }}
+                {% include svg/components/chevron-down.svg %}
+              </span>
             </div>
-            {% if forloop.index == 1 %}
-            <div class='options'>
-            {% else %}
             <div class='options hide'>
-            {% endif %}
               <div class='row d-flex align-items-stretch mb-3'>
                 {% for option in package.options %}
                   <div class='col-xs-12 col-sm-6 col-md-4 mb-3'>
                     <div class='option d-flex flex-column'>
                       <div class='option-title'>
                         <span class='option-no'>
-                        {{ option.title }}
+                          {{ option.title }}
                         </span>
                         <span class='option-name'>
                           {{ option.name }}
