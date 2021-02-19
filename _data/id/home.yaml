@@ -1,10 +1,10 @@
 sectionOne:
   headline: NUTRIOLAB.
   subHeadline: Smart Food Businesses
-  subHeadlineContent: We are not just a food consultant, <span class='underline'><b>We are the extension of your team</b></span>, Together we build the future of food industry.
+  subHeadlineContent: Kami bukan sekedar konsultan pangan, <span class='underline'><b>Kami adalah perpanjangan dari tim Anda</b></span>, Bersama-sama kita bangun masa depan industri pangan.
   cta: 
-    name: Check our services
-    link: /services
+    name: Cek layanan kami
+    link: /layanan
 sectionTwo:
   testimonialsHeader: Testimonials
   testimonyOne:
