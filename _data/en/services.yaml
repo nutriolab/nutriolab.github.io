@@ -1,7 +1,4 @@
----
-permalink: /services
-layout: services
-title: Nutriolab - Services
+header: Services
 packages:
   - name: Package A - General Food Science
     options:
@@ -146,4 +143,7 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
           - ++ Testing / Analysis
+cta:
+  name: consult with us
+  link: /contact
 ---

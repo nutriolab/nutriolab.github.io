@@ -1,0 +1,146 @@
+---
+layout: base
+assets_css:
+  - assets/css/index.css
+assets_js:
+  - https://cdn.jsdelivr.net/npm/scrollmagic@2.0.7/scrollmagic/uncompressed/ScrollMagic.min.js
+  # ScrollMagic debugger
+  # - http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js
+  - assets/js/index.js
+---
+{% assign home = site.data[page.lang].home %}
+<div class="fixed-padded-section section-one d-flex">
+  <div class='top container'>
+    <div class="row vp-container align-items-start">
+      <div class="col-12 col-md-7 align-self-center mb-5 mb-md-0">
+        <div class='circle'>
+          {% include svg/section_one/landing_circle.svg %}
+        </div>
+        <div class='line-connector'></div>
+      </div>
+      <div class="col-12 col-md-5 align-self-center">
+        <div class='right-container pl-0 pl-md-3'>
+          <h2 class='headline'>
+            <div class='nutriolab-text white'>{{ home.sectionOne.headline }}</div>
+          </h2>
+          <p class='sub-headline'><i>{{ home.sectionOne.subHeadline }}</i></p>
+          <p class='headline-content'>{{ home.sectionOne.subHeadlineContent }}</p>
+          <span class='cta'><a href='{{ home.sectionOne.cta.link }}'><b>{{ home.sectionOne.cta.name }}</b></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='extra-section section-one'></div>
+<div class="fixed-padded-section section-two d-flex">
+  <div class='top container'>
+    <div class="row vp-container align-items-start">
+      <div class="col-12 col-md-7 align-self-center testimony-col mb-5 mb-md-0">
+        <div class='left-container pr-4'>
+          <p class='mb-4'>{{ home.sectionTwo.testimonialsHeader }}:</p>
+          <div class='box d-flex flex-row mb-5 mb-md-0 mr-0 mr-md-5'>
+            <div class='slice-container'>
+              <div class='left'>
+                <div class='slice-one'>
+                  {% include svg/section_two/slice-one.svg %}
+                </div>
+              </div>
+              <div class='right'>
+                <div class='slice slice-two'>
+                  {% include svg/section_two/slice-two.svg %}
+                </div>
+                <div class='slice slice-three'>
+                  {% include svg/section_two/slice-three.svg %}
+                </div>
+              </div>
+            </div>
+            <div class='testimony-container d-flex flex-column justify-content-between'>
+              <div class='testimony'>
+                “{{ home.sectionTwo.testimonyOne.content }}”
+                <span class='by'>- <b>{{ home.sectionTwo.testimonyOne.by }}</b>, {{ home.sectionTwo.testimonyOne.title }}</span>
+              </div>
+              <div class='testimony'>
+                “{{ home.sectionTwo.testimonyTwo.content }}”
+                <span class='by'>- <b>{{ home.sectionTwo.testimonyTwo.by }}</b>, {{ home.sectionTwo.testimonyTwo.title }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-5 align-self-center">
+        <div class='right-container pl-0 pl-md-3 pr-4'>
+          <h1 class='headline'>
+            <div class='nutriolab-text blue'>{{ home.sectionTwo.headline }}.</div>
+          </h1>
+          <div class='description'>
+            {{ home.sectionTwo.description }} 
+          </div>
+          <div class='logos'>
+            {% for logo in home.sectionTwo.testimonyLogos %}
+            <img class='logo' loading='lazy' src='{{ logo }}' />
+            {% endfor %}
+          </div>
+          <span class='cta'>
+            <a href='{{ home.sectionTwo.cta.link }}'>
+              <b>{{ home.sectionTwo.cta.name }}</b>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='extra-section section-two'></div>
+<div class="fixed-padded-section section-three d-flex">
+  <div class='top container'>
+    <div class="row vp-container align-items-center">
+      <div class="col-12 col-md-7 order-2 order-md-1">
+        <div class='left-container pr-5'>
+          {% for do in home.sectionThree.whatDoWeDo %}
+            <div class="do row d-flex align-items-center">
+              <div class='text order-1 order-md-0 col-12 col-md-9'>
+                <div class='title'>
+                  <h3>
+                    {{ do.name }}
+                  </h3>
+                </div>
+                <div class='description'>
+                  {{ do.description }}
+                </div>
+              </div>
+              <div class='figure order-0 order-md-1 col-12 col-md-3 text-right text-md-center mb-2 mb-md-0'>
+                {% include {{ do.includeSvg }} %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-5 order-1 order-md-2">
+        <div class='right-container pl-0 pl-md-3 mb-5 mb-md-0'>
+          <h1 class='headline'>{{ home.sectionThree.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='extra-section section-three'></div>
+<div class="last fixed-padded-section section-four d-flex">
+  <div class='line-end'>
+    {% include svg/section_four/line-end.svg %}
+  </div>
+  <div class='cta'>
+    <a href='{{ home.sectionFour.cta.link }}'>
+      <b>
+        {{ home.sectionFour.cta.name }}
+      </b>
+    </a>
+  </div>
+  <div class='top container'>
+    <div class="row vp-container align-items-center justify-content-center">
+      <div class='text-container'>
+        <h2 class='alata'>{{ home.sectionFour.textFirstLine }}</h2>
+        <h2 class='alata'><b>{{ home.sectionFour.textSecondLine }}</b></h2>
+      </div>
+    </div>
+  </div>
+</div>

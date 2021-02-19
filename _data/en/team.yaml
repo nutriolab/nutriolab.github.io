@@ -1,7 +1,4 @@
----
-permalink: /team
-layout: team
-title: Nutriolab - Team
+headline: Meet our team!
 groups:
   - name: Founders
     members:
@@ -31,4 +28,3 @@ groups:
         image: /assets/media/team/cadiwijaya.jpg
         education: Bachelor of Industrial Design (Emily Carr University of Art and Design)
         expertise: Concept and product development, design reseach, branding and visual element, 3D visual modelling, and mediagrapher.
----

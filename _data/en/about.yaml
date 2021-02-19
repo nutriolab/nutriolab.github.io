@@ -1,0 +1,22 @@
+header: About Us
+aboutUs:
+  lineOne: We are not just a food consultant. We are the extension of your team. Together we are breathing innovation to your idea and bringing it to life
+  lineTwo: We are driven by our purpose to make it easy for you as a food business owner in South-East Asia to seek any expertise (or any advices) in technical food product development in just one-click away. Our consulting experts will guide you throughout the process in making a delicious, marketable and consumer-centric food product. Your success is exactly the reason why we do what we do now.
+  cta:
+    name: check our services
+    link: /services
+vision:
+  title: Vision
+  content: To empower people to have a better livelihood through innovation and system design.
+mission:
+  title: Mission
+  content: To help our clients make distinctive, lasting, and substantial improvements in their performance and to build a great firm that attracts, develops, excites, and retains exceptional people. 
+cta:
+  name: consult with us
+  link: /contact
+values:
+  - Professionalism
+  - Customer - first
+  - Continuous Improvement
+  - Integrity
+  - Collaboration

@@ -5,14 +5,15 @@ assets_css:
 assets_js:
   - assets/js/services.js
 ---
+{% assign services = site.data[page.lang].services %}
 <div class='fixed-padded-content services'>
   <div class='container'>
     <div class='row'>
       <div class='col-12'>
-        <h1>Services</h1>
+        <h1>{{ services.header }}</h1>
       </div>
       <div class='col-12'>
-        {% for package in page.packages %}
+        {% for package in services.packages %}
           <div class='package'>
             <div class='title'>
               <span>
@@ -69,6 +70,8 @@ assets_js:
 </div>
 <div class="cta-container">
   <div class="cta">
-    consult with us
+    <a href="{{ services.cta.link }}">
+      {{ services.cta.name }}
+    </a>
   </div>
 </div>

@@ -5,11 +5,12 @@ assets_css:
 assets_js:
   - assets/js/contact.js
 ---
+{% assign contact = site.data[page.lang].contact %}
 <div class='fixed-padded-content contact'>
   <div class='container'>
     <div class='row'>
       <div class='col-12'>
-        <h1 class='title'>Consult with us</h1>
+        <h1 class='title'>{{ contact.header }}</h1>
       </div>
       <div class='col-12'>
         <div class='input-container'>
@@ -66,7 +67,7 @@ assets_js:
         <!-- Calendly inline widget end -->
       </div>
       <div class='col-12 text-right'>
-        <button class='send-button'>Send</button>
+        <button class='send-button'>{{ contact.sendButton.text }}</button>
       </div>
     </div>
   </div>

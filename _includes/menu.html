@@ -5,9 +5,11 @@
       {% include svg/components/close.svg %}
     </div>
   </div>
-  <div class='option'><a href='/'>Home</a></div>
-  <div class='option'><a href='/services'>Services</a></div>
-  <div class='option'><a href='/about'>About Us</a></div>
-  <div class='option'><a href='/contact'>Contact</a></div>
-  <div class='option'><a href='/team'>Team</a></div>
+  {% for menu in site.data.menu[page.lang] %}
+    <div class='option'>
+      <a href='{{ menu[1].link }}'>
+        {{ menu[1].name }}
+      </a>
+    </div>
+  {% endfor %}
 </div>

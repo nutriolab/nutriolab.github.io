@@ -1,3 +1,4 @@
+{% assign langs = [🇬🇧, 🇮🇩] %}
 <div class='header'>
   <div class="container-fluid">
     <div class='logo-container'>
@@ -8,12 +9,39 @@
     </div>
     <div id='lang-container' class='d-flex'>
       <div class='select-lang'>
-        <span class='chosen-lang'>🇬🇧</span>
+        <span class='chosen-lang'>
+          {% if page.lang == 'en' %}
+            🇬🇧
+          {% else %}
+            🇮🇩
+          {% endif %}
+        </span>
         {% include svg/lang_indicator.svg %} 
       </div>
+      {% assign id = page.path | split: "/" | last | split: "." | first %}
       <div id='lang-options' class='closed'>
-        <div class='lang-option chosen'><span>🇬🇧</span></div>
-        <div class='lang-option'><span>🇮🇩</span></div>
+        {% if page.lang == 'en' %}
+        <div class='lang-option chosen'>
+        {% else %}
+        <div class='lang-option'>
+        {% endif %}
+          <span>
+            <a href='{{ site.data.menu.en[id].link }}'>
+              🇬🇧
+            </a>
+          </span>
+        </div>
+        {% if page.lang == 'id' %}
+        <div class='lang-option chosen'>
+        {% else %}
+        <div class='lang-option'>
+        {% endif %}
+          <span>
+            <a href='{{ site.data.menu.id[id].link }}'>
+              🇮🇩
+            </a>
+          </span>
+        </div>
       </div>     
     </div>
   </div>
