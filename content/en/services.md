@@ -1,8 +1,6 @@
 ---
 permalink: /services
 title: Nutriolab - Services
-## START DO NOT EDIT ##
 lang: en
 layout: services
-### END DO NOT EDIT ###
 ---
