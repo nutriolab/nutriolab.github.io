@@ -1,0 +1,30 @@
+headline: Meet our team!
+groups:
+  - name: Founders
+    members:
+      - name: Zenia Adiwijaya
+        image: /assets/media/team/zadiwijaya.jpg
+        education: M.Sc. System Design & Management Candidate (MIT); M.B.A / B.Sc. Food Science (Iowa State University).
+        expertise: System management, food science, product development & formulation, food Operation & supply chain, sensory science, procurement, commercialization.
+      - name: Stella Alinneshia
+        image: /assets/media/team/salinneshia.jpg
+        education: B.Sc (IPB University); M.Sc Food Technology - Product Design (Wageningen University and Research)
+        expertise: Product design, product and consumer research, market research, business analysis and strategy, program and project management, relationship and stakeholder management.
+      - name: Cynthia Andriani
+        image: /assets/media/team/candriani.jpg
+        education: B.Sc (IPB University); M.Sc Food Science and Nutrition (Lund University).
+        expertise: Food engineering, dairy products, plant-based food, research,  food safety and quality, food processing, food system integration, package material, community development
+      - name: Era Premakara
+        image: /assets/media/team/apremakara.jpg
+        education: BFA (Parsons The New School for Design - NYC) ; M.Arch - Creative Computing (Univeristy College London)
+        expertise: User and market research analysis, concept and product design development, project management, digital content creator.
+  - name: Our Consultants
+    members:
+      - name: Sylvia Indriani
+        image: /assets/media/team/sindriani.jpg
+        education: Ph.D candidate in Food Science / M.Sc (King Mongkut’s Institute of technology Ladkrabang) 
+        expertise: Food science research, product development & formulation, food analysis, food operation & supply chain, sensory science.
+      - name: Claudia Adiwijaya
+        image: /assets/media/team/cadiwijaya.jpg
+        education: Bachelor of Industrial Design (Emily Carr University of Art and Design)
+        expertise: Concept and product development, design reseach, branding and visual element, 3D visual modelling, and mediagrapher.

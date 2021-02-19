@@ -34,3 +34,6 @@ How to update:
 - Add new `.md` file on each language at [content](/content)
 - Add new `.yaml` file on each language at [_data](/_data)
 - Add menu to menu file [_data/menu.yaml](/_data/menu.yaml) based on the file name you use at the [content](/content)
+
+## Notes
+- If values contain weird text like `<span class='underline'><b>We are the extension of your team</b></span>`, it's because it needs some styling/formatting. That syntax is HTML syntax. Refer to Google on how to use HTML and CSS syntaxes if you need to style/format your text.

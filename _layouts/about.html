@@ -5,6 +5,7 @@ assets_css:
 assets_js:
   - assets/js/about.js
 ---
+{% assign aboutUs = site.data[page.lang].about %}
 <div class='top-about-container'>
   <div class='line-end line-end-top'>
     {% include svg/section_four/line-end.svg %}
@@ -15,14 +16,14 @@ assets_js:
         <div class='col-12 col-md-6'>
           <div class='top'>
             <h1 class='about-us-title'>
-              <b>About Us</b>
+              <b>{{ aboutUs.header }}</b>
             </h1>
-            <p>We are not just a food consultant. We are the extension of your team. Together we are breathing innovation to your idea and bringing it to life</p>
-            <p>We are driven by our purpose to make it easy for you as a food business owner in South-East Asia to seek any expertise (or any advices) in technical food product development in just one-click away. Our consulting experts will guide you throughout the process in making a delicious, marketable and consumer-centric food product. Your success is exactly the reason why we do what we do now.</p>
+            <p>{{ aboutUs.aboutUs.lineOne }}</p>
+            <p>{{ aboutUs.aboutUs.lineTwo }}</p>
             <div class='cta'>
-              <a href='/services'>
+              <a href='{{ aboutUs.cta.link }}'>
                 <b>
-                  check our services
+                  {{ aboutUs.aboutUs.cta.name }}
                 </b>
               </a>
             </div>
@@ -43,15 +44,15 @@ assets_js:
           <div class='bottom'>
             <div class='vision-mission'>
               <div class='vision'>
-                <h2 class='vm-title'><b>Vision</b></h2>
+                <h2 class='vm-title'><b>{{ aboutUs.vision.title }}</b></h2>
                 <div class='description'>
-                  To empower people to have a better livelihood through innovation and system design.
+                  {{ aboutUs.vision.content }}
                 </div>
               </div>
               <div class='mission'>
-                <h2 class='vm-title'><b>Mission</b></h2>
+                <h2 class='vm-title'><b>{{ aboutUs.mission.title }}</b></h2>
                 <div class='description'>
-                  To help our clients make distinctive, lasting, and substantial improvements in their performance and to build a great firm that attracts, develops, excites, and retains exceptional people. 
+                  {{ aboutUs.mission.content }}
                 </div>
               </div>
             </div>
@@ -61,7 +62,7 @@ assets_js:
     </div>
   </div>
   <div class='fixed-padded-content about cta-container'>
-    <div class='cta cta-2'><a href='/contact'><b>consult with us</b></a></div>
+    <div class='cta cta-2'><a href='{{ aboutUs.cta.link }}'><b>{{ aboutUs.cta.name }}</b></a></div>
   </div>
   <div class='fixed-padded-content about'>
     <div class='container'>
@@ -69,32 +70,13 @@ assets_js:
         <div class='col-12 offset-md-6 col-md-6'>
           <div class="values">
             <div class='d-flex flex-column'>
-              <div class='value'>
-                <span class='value-text'>
-                  Professionalism
-                </span>
-              </div>
-              <div class='value'>
-                <span class='value-text'>
-                  Customer - first
-                </span>
-              </div>
-              <div class='value'>
-                <span class='value-text'>
-                  Continuous Improvement
-                </span>
-              </div>
-              <div class='value'>
-                <span class='value-text'>
-                  Integrity
-                </span>
-              </div>
-              <div class='value'>
-                <span class='value-text'>
-                  Collaboration
-                </span>
-              </span>
-            </div>
+              {% for value in aboutUs.values %}
+                <div class='value'>
+                  <span class='value-text'>
+                    {{ value }}
+                  </span>
+                </div>
+              {% endfor %}
           </div>
         </div>
       </div>

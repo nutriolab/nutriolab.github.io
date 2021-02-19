@@ -2,5 +2,5 @@
 permalink: /
 title: Nutriolab
 lang: en
-layout: index
+layout: home
 ---
