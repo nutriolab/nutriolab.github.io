@@ -5,6 +5,7 @@ assets_css:
 assets_js:
   - assets/js/services.js
 ---
+{% assign packages = site.data[page.lang].services.packages %}
 <div class='fixed-padded-content services'>
   <div class='container'>
     <div class='row'>
@@ -12,7 +13,7 @@ assets_js:
         <h1>Services</h1>
       </div>
       <div class='col-12'>
-        {% for package in page.packages %}
+        {% for package in packages %}
           <div class='package'>
             <div class='title'>
               <span>

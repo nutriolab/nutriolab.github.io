@@ -1,8 +1,8 @@
 ---
-permalink: /services
-title: Nutriolab - Services
+permalink: /servis
+title: Nutriolab - Servis
 ## START DO NOT EDIT ##
-lang: en
+lang: id
 layout: services
 ### END DO NOT EDIT ###
 ---
