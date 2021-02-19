@@ -21,7 +21,6 @@ How to update:
 - Update the value of `title`
 - Click "Commit Changes" and make sure "Commit directly to the 'main' branch" is checked.
 
-
 3. [Page content](#content)
 - Go to [_data](/_data) folder
 - Select the language (en/id) folder
@@ -30,3 +29,8 @@ How to update:
 - Update the file
 - Find the variable you want to update and update the value (Variable names varies depending on the page, search the value you want to update and if it is there, then it is editable)
 - Click "Commit Changes" and make sure "Commit directly to the 'main' branch" is checked.
+
+4. [Adding a new page](#new-page)
+- Add new `.md` file on each language at [content](/content)
+- Add new `.yaml` file on each language at [_data](/_data)
+- Add menu to menu file [_data/menu.yaml](/_data/menu.yaml) based on the file name you use at the [content](/content)
