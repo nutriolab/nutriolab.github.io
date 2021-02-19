@@ -1,5 +1,6 @@
 ---
 permalink: /
-layout: index
 title: Nutriolab
+lang: en
+layout: index
 ---

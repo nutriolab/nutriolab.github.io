@@ -1,0 +1,32 @@
+en:
+  home: 
+    link: /
+    name: Home
+  services:
+    link: /services
+    name: Services
+  about:
+    link: /about
+    name: About
+  contact:
+    link: /contact
+    name: Contact
+  team:
+    link: /team
+    name: Team
+id:
+  home: 
+    link: /beranda
+    name: Beranda
+  services:
+    link: /layanan
+    name: Layanan
+  about:
+    link: /tentang-kami
+    name: Tentang Kami
+  contact:
+    link: /Kontak
+    name: Kontak
+  team:
+    link: /tim
+    name: Tim
