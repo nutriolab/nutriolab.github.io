@@ -1,6 +1,6 @@
 ---
 permalink: /beranda
-title: Nutriolab
+title: Nutriolab - Beranda
 lang: id
 layout: home
 ---
