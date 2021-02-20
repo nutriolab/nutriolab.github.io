@@ -1,0 +1,15 @@
+home: 
+  link: /
+  name: Home
+services:
+  link: /services
+  name: Services
+about:
+  link: /about-us
+  name: About Us
+contact:
+  link: /contact
+  name: Contact
+team:
+  link: /team
+  name: Team

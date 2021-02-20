@@ -5,7 +5,7 @@
       {% include svg/components/close.svg %}
     </div>
   </div>
-  {% for menu in site.data.menu[page.lang] %}
+  {% for menu in site.data[page.lang].menu %}
     <div class='option'>
       <a href='{{ menu[1].link }}'>
         {{ menu[1].name }}

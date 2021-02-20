@@ -1,0 +1,15 @@
+home: 
+  link: /beranda
+  name: Beranda
+services:
+  link: /layanan
+  name: Layanan
+about:
+  link: /tentang-kami
+  name: Tentang Kami
+contact:
+  link: /kontak
+  name: Kontak
+team:
+  link: /tim
+  name: Tim
