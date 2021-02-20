@@ -1,0 +1,11 @@
+<svg viewBox="0 0 264 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-11" x="0" y="0" width="264" height="130" rx="30" vector-effect="non-scaling-stroke"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="264" height="130" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+    </defs>
+    <g class="rect-horizontal-stroke" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="3,8">
+        <use id="Rectangle" stroke="#0D25FD" mask="url(#mask-22)" stroke-width="35" xlink:href="#path-11"></use>
+    </g>
+</svg>

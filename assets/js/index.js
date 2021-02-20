@@ -101,7 +101,7 @@ const setupScroll = () => {
 
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   const circleBorder = document.getElementsByClassName('dashed-circle')[0];
-  const endLineStroke = document.getElementById('line-end-stroke')
+  const endLineStroke = document.getElementsByClassName('rect-horizontal-stroke')[0];
   const commonScene = new ScrollMagic.Scene({
     duration: totalHeight,
     offset: 0,
@@ -129,7 +129,7 @@ const changeCommonEls = (bgColor, strokeColor) => {
   circleBorder.style.stroke = strokeColor;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.backgroundColor = strokeColor;
-  const lineEnd = document.getElementById('line-end-stroke');
+  const lineEnd = document.getElementsByClassName('rect-horizontal-stroke')[0];
   const lineEndStroke = lineEnd.getElementsByTagName('use')[0];
   lineEndStroke.style.stroke = strokeColor;
   const strokeComms = document.getElementsByClassName('stroke-comm');

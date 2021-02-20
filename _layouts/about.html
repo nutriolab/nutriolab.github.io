@@ -6,53 +6,28 @@ assets_js:
   - assets/js/about.js
 ---
 {% assign aboutUs = site.data[page.lang].about %}
-<div class='top-about-container'>
-  <div class='line-end line-end-top'>
-    {% include svg/section_four/line-end.svg %}
-  </div>
-  <div class='fixed-padded-content about'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-12 col-md-6'>
-          <div class='top'>
-            <h1 class='about-us-title'>
-              <b>{{ aboutUs.header }}</b>
-            </h1>
-            <p>{{ aboutUs.aboutUs.lineOne }}</p>
-            <p>{{ aboutUs.aboutUs.lineTwo }}</p>
-            <div class='cta'>
-              <a href='{{ aboutUs.cta.link }}'>
-                <b>
-                  {{ aboutUs.aboutUs.cta.name }}
-                </b>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class='about-container'>
+  <div class='top-about-container'>
+    <div class='rect-horizontal'>
+      {% include svg/components/rect-horizontal.svg %}
     </div>
-  </div>
-</div>
-<div class='bottom'>
-  <div class='line-end line-end-bottom'>
-    {% include svg/section_four/line-end.svg %}
-  </div>
-  <div class='fixed-padded-content about'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-12 offset-md-6 col-md-6'>
-          <div class='bottom'>
-            <div class='vision-mission'>
-              <div class='vision'>
-                <h2 class='vm-title'><b>{{ aboutUs.vision.title }}</b></h2>
-                <div class='description'>
-                  {{ aboutUs.vision.content }}
-                </div>
-              </div>
-              <div class='mission'>
-                <h2 class='vm-title'><b>{{ aboutUs.mission.title }}</b></h2>
-                <div class='description'>
-                  {{ aboutUs.mission.content }}
+    <div class='fixed-padded-content about'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-12 col-md-6'>
+            <div class='top'>
+              <h1 class='about-us-title'>
+                <b>{{ aboutUs.header }}</b>
+              </h1>
+              <p>{{ aboutUs.aboutUs.lineOne }}</p>
+              <p>{{ aboutUs.aboutUs.lineTwo }}</p>
+              <div class='cta'>
+                <div class='button'>
+                  <a href='{{ aboutUs.cta.link }}'>
+                    <b>
+                      {{ aboutUs.aboutUs.cta.name }}
+                    </b>
+                  </a>
                 </div>
               </div>
             </div>
@@ -61,22 +36,51 @@ assets_js:
       </div>
     </div>
   </div>
-  <div class='fixed-padded-content about cta-container'>
-    <div class='cta cta-2'><a href='{{ aboutUs.cta.link }}'><b>{{ aboutUs.cta.name }}</b></a></div>
-  </div>
-  <div class='fixed-padded-content about'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-12 offset-md-6 col-md-6'>
-          <div class="values">
-            <div class='d-flex flex-column'>
-              {% for value in aboutUs.values %}
-                <div class='value'>
-                  <span class='value-text'>
-                    {{ value }}
-                  </span>
+  <div class='bottom'>
+    <div class='rect-vertical'>
+      <!-- {% include svg/components/rect-vertical.svg %} -->
+    </div>
+    <div class='fixed-padded-content about vis-mis'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-12 offset-md-6 col-md-6'>
+            <div class='bottom'>
+              <div class='vision-mission'>
+                <div class='vision'>
+                  <h2 class='vm-title'><b>{{ aboutUs.vision.title }}</b></h2>
+                  <div class='description'>
+                    {{ aboutUs.vision.content }}
+                  </div>
                 </div>
-              {% endfor %}
+                <div class='mission'>
+                  <h2 class='vm-title'><b>{{ aboutUs.mission.title }}</b></h2>
+                  <div class='description'>
+                    {{ aboutUs.mission.content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='fixed-padded-content about cta-container'>
+      <div class='cta cta-2'><a href='{{ aboutUs.cta.link }}'><b>{{ aboutUs.cta.name }}</b></a></div>
+    </div>
+    <div class='about values'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-12 offset-md-6 col-md-6'>
+            <div class="values">
+              <div class='d-flex flex-column'>
+                {% for value in aboutUs.values %}
+                  <div class='value'>
+                    <span class='value-text'>
+                      {{ value }}
+                    </span>
+                  </div>
+                {% endfor %}
+            </div>
           </div>
         </div>
       </div>

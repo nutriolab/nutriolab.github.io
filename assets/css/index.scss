@@ -229,7 +229,7 @@
     height: 100%;
     width: auto;
 
-    #line-end-stroke {
+    .rect-horizontal-stroke {
       use {
         transition: stroke $transitionDuration;
       }
