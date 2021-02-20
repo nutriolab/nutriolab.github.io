@@ -4,9 +4,9 @@ packages:
     options:
       - title: 101
         name: Basic
-        description: Q&A covering basic food science and general food product development.
+        description: Q&A mencakup ilmu pangan dan pengembangan produk pangan secara umum. 
         services:
-          - ++ Consultation (50 min)
+          - ++ Konsultasi (50 min)
         price:
           value: '750'
           cardinal: k
