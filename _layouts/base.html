@@ -44,10 +44,12 @@
     </script>
   </head>
   <body>
-    {% include header.html %}
     {% include menu.html %}
+    {% include header.html %}
     {% include sider.html %}
-    {{ content }}
+    <div id='content'>
+      {{ content }}
+    </div>
     {% include footer.html %}
     <!--Javascript-->
     {% for js in layout.assets_js %}
