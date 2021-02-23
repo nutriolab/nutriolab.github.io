@@ -1,0 +1,23 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="722" height="719" viewBox="0 0 722 719" fill="none" class='dashed-circle'>
+    <path id="circle-border-1" d="M359 9.99998C553.957 9.99999 712 168.044 712 363" stroke="white" stroke-width="18" stroke-dasharray="3 8" vector-effect="non-scaling-stroke" />
+    <path id="circle-border-2" d="M359 709C166.253 709 10 550.957 10 356" stroke="white" stroke-width="18" stroke-dasharray="3 8" vector-effect="non-scaling-stroke" />
+    <path d="M359 0C160.73 0 0 160.73 0 359H359V0Z" fill="white"/>
+    <path d="M102 359C102 217.063 217.063 102 359 102" stroke="#0D25FD" stroke-width="10"/>
+    <path d="M64 359C64 522.476 196.076 655 359 655L359 359L64 359Z" fill="white" fill-opacity="0.8"/>
+    <path d="M359 551C252.961 551 167 465.039 167 359" stroke="#0D25FD" stroke-width="5"/>
+    <path d="M359 567.5C244.125 567.5 150 473.875 150 359" stroke="#0D25FD" stroke-width="10"/>
+    <path d="M359 719C557.823 719 719 558.27 719 360L359 360L359 719Z" fill="white" fill-opacity="0.5"/>
+    <rect x="359" y="30" width="298" height="330" fill="url(#pattern0)"/>
+    <path d="M359 623C523.581 623 657 504.803 657 359L359 359L359 623Z" fill="url(#pattern1)" fill-opacity="0.3"/>
+    <rect x="396.2" y="170.63" width="112" height="19" transform="rotate(-9.75955 396.2 170.63)" fill="#0D25FD" fill-opacity="0.8"/>
+    <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="translate(-0.438062 -0.262185) scale(0.000953308)"/>
+        </pattern>
+        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image1" transform="translate(1.4433 2.54632) scale(0.000958971 0.00106131) rotate(180)"/>
+        </pattern>
+        <image id="image0" width="2193" height="2502" href="/assets/media/nathan-dumlao.png" />
+        <image id="image1" width="2193" height="2502" href="/assets/media/nathan-dumlao.png" />
+    </defs>
+</svg>

@@ -108,7 +108,7 @@ const setupScroll = () => {
     triggerHook: 'onCenter'
   })
   .on('progress', () => {
-    circleBorder.style.strokeDashoffset = window.pageYOffset;
+    circleBorder.style.strokeDashoffset = -window.pageYOffset;
     lineConnector.style.webkitMaskPositionY = `${window.pageYOffset}px`;
     lineConnector.style.maskPositionY = `${window.pageYOffset}px`;
     endLineStroke.style.strokeDashoffset = `-${window.pageYOffset}`
@@ -127,8 +127,10 @@ const changeCommonEls = (bgColor, strokeColor) => {
   }
   const langChevron = document.getElementsByClassName('chevron-down')[0];
   langChevron.style.fill = strokeColor;
-  const circleBorder = document.getElementById('circle-border');
-  circleBorder.style.stroke = strokeColor;
+  const circleBorderOne = document.getElementById('circle-border-1');
+  const circleBorderTwo = document.getElementById('circle-border-2');
+  circleBorderOne.style.stroke = strokeColor;
+  circleBorderTwo.style.stroke = strokeColor;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.backgroundColor = strokeColor;
   const lineEnd = document.getElementsByClassName('rect-horizontal-stroke')[0];
