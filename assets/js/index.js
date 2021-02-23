@@ -125,6 +125,8 @@ const changeCommonEls = (bgColor, strokeColor) => {
   for (section of sections) {
     section.style.backgroundColor = bgColor;
   }
+  const langChevron = document.getElementsByClassName('chevron-down')[0];
+  langChevron.style.fill = strokeColor;
   const circleBorder = document.getElementById('circle-border');
   circleBorder.style.stroke = strokeColor;
   const lineConnector = document.getElementsByClassName('line-connector')[0];

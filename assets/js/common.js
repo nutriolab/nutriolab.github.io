@@ -13,17 +13,19 @@ const commonSetup = () => {
   }
 
   menuOverlay.onclick = (e) => {
-    console.log('clicked');
     closeButton.onclick();
+    selectedLangContainer.onclick();
   }
 
-  const langContainer = document.getElementById('lang-container');
+  const selectedLangContainer = document.getElementsByClassName('select-lang')[0];
   const langOptions = document.getElementById('lang-options');
-  langContainer.onclick = () => {
+  selectedLangContainer.onclick = () => {
     if (langOptions.className == 'closed') {
       langOptions.className = '';
+      menuOverlay.className = 'active';
     } else {
       langOptions.className = 'closed';
+      menuOverlay.className = '';
     }
   }
 };
