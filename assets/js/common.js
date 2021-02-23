@@ -11,10 +11,15 @@ const commonSetup = () => {
     menu.className = 'closed';
     menuOverlay.className = '';
   }
+  
+  const closeSelectedLang = () => {
+    langOptions.className = 'closed';
+    menuOverlay.className = '';
+  }
 
   menuOverlay.onclick = (e) => {
     closeButton.onclick();
-    selectedLangContainer.onclick();
+    closeSelectedLang();
   }
 
   const selectedLangContainer = document.getElementsByClassName('select-lang')[0];

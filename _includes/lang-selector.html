@@ -21,14 +21,18 @@
         {% else %}
         <div class='lang-option'>
         {% endif %}
+        {% if forloop.index0 == 0 %}
+          <span>
+            {{ lang }}
+          </span>
+          {% include svg/components/chevron-down.svg %}
+        {% else %}
           <span>
             <a href='{{ links[forloop.index0] }}'>
               {{ lang }}
-            </a>
-          </span>
-          {% if forloop.index0 == 0 %}
-            {% include svg/components/chevron-down.svg %}
-          {% endif %}
+            </a>  
+          </span>  
+        {% endif %}
         </div>
       {% endfor %}
     </div>

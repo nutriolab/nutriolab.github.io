@@ -205,6 +205,11 @@ body {
 }
 
 @media (max-width: $smallBreakpoint) {
+  #lang-container {
+    top: $m-total-padding;
+    right: $m-total-padding;
+  }
+
   body {
     .header {
       padding-top: $m-total-padding;
