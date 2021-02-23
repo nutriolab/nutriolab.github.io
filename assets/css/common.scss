@@ -2,7 +2,7 @@
 ---
 @import 'variables';
 
-#logo, #close-button, .select-lang, .lang-option {
+#logo, .close-button, .select-lang, .lang-option {
   cursor: pointer;
 }
 
@@ -141,7 +141,7 @@ body {
       height: 60px;
       margin-bottom: 20px;
 
-      #close-button {
+      .close-button {
         vertical-align: baseline;
       }
     }

@@ -6,7 +6,7 @@ const commonSetup = () => {
     menu.className = '';
     menuOverlay.className = 'active';
   };
-  const closeButton = document.getElementById('close-button');
+  const closeButton = document.getElementsByClassName('close-button')[0];
   closeButton.onclick = () => {
     menu.className = 'closed';
     menuOverlay.className = '';
