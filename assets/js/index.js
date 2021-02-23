@@ -80,7 +80,7 @@ const setupScroll = () => {
   }
   scenes[0].on('enter', () => {
     changeCommonEls('#0D25FD', 'white');
-    changeSocialMediaColors('#E7FB69');
+    changeSocialMediaColors('white');
   });
   scenes[1].on('enter', () => {
     changeCommonEls('rgb(231, 251, 105)', '#0D25FD');
