@@ -1,4 +1,7 @@
 header: Services
+message: |
+  Complementary Introductory Call (15 mins)
+  General Consultancy (Product / Technical) – Rp 200-500k
 packages:
   - name: Package A - General Food Science
     options:
@@ -143,6 +146,9 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
           - ++ Testing / Analysis
+postPackages:
+  title: Other inquiries
+  message: Don’t see you issues up there? Let us know through complementary introductory call or general inquires.
 cta:
   name: consult with us
   link: /contact
