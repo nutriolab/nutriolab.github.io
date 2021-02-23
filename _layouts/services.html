@@ -10,7 +10,7 @@ assets_js:
   <div class='fixed-padded-content'>
     <div class='container'>
       <div class='row'>
-        <div class='col-12'>
+        <div class='col-12 header-title'>
           <h1>{{ services.header }}</h1>
         </div>
         <div class='col-12'>
@@ -19,8 +19,8 @@ assets_js:
         <div class='col-12 mb-3'>
           {% for package in services.packages %}
             <div class='package'>
-              <div class='title'>
-                <span>
+              <div class='mb-3'>
+                <span class='title'>
                   {{ package.name }}
                   {% include svg/components/chevron-down.svg %}
                 </span>

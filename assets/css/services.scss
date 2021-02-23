@@ -7,22 +7,29 @@
   color: white;
 }
 
+.header {
+  background-color: $darkBlue;
+}
+
 .services {
   background-color: $darkBlue;
   min-height: 100vh;
   color: white;
 
+  .header-title {
+    position: sticky;
+    top: $total-padding + $logo-height;
+    background-color: $darkBlue;
+    z-index: 1;
+  }
+
   .package {
     margin-bottom: 20px;
 
     .title {
-      margin-bottom: 10px;
       cursor: pointer;
-
-      span {
-        font-weight: bolder;
-        box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.4) inset;
-      }
+      font-weight: bolder;
+      box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.4) inset;
     }
     
     .options {
