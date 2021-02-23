@@ -25,15 +25,15 @@
     {% endfor %}
     <!--SEO-->
     <meta name="author" content="Nutriolab">
-    <meta name="keywords" content="nutriolab, nutribless, food science, food safety, food engineering, consultant, sensory, indonesia, enterprises, SME, food consultant, start up, affordable, food packaging, quality, nutrition, teknologi pangan, makanan, minuman, konsultan pangan, UMKM, bisnis makanan minuman, teknologi pangan, konsultasi online, bisnis kecil, nutrisi, bisnis kuliner, kuliner, jualan online" />
+    <meta name="keywords" content="{{ site.data[page.lang].default.seo.keywords }}" />
     <meta property="og:title" content="{{ page.title | default: 'Nutriolab' }}">
-    <meta property="og:description" content="{{ page.description | truncate: 156 }}">
-    <meta property="og:image" content="{{ page.seo_image_url | default: '/assets/media/seo.png' | absolute_url }}">
+    <meta property="og:description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}">
+    <meta property="og:image" content="{{ page.seo_image_url | default: site.data[page.lang].default.seo.image_url | absolute_url }}">
     <meta property="og:url" content="{{ page.permalink | default: page.url | absolute_url }}">
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="500" />
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="{{ page.description | truncate: 156 }}" />
+    <meta name="twitter:description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWJJ41DV58"></script>
     <script>
