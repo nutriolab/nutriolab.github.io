@@ -15,8 +15,10 @@ sectionTwo:
     content: Tacos El Asa was started during the height of the Coronavirus pandemic with 1 person. Nutriolab, through its team and multidisciplinary expertise, has been able to provide actionable insights to help Tacos El Asa grow and maintain quality even when resources are limited.
     by: Gideon Yuwono
     title: Owner of Taco El Asa
-  headline: NUTRIOLAB.
-  description: is an Indonesian-based Food & Beverage consulting company. We bring our expertise in technical food product development to help you materialize your product concept. Your success is exactly the reason why we do what we do now.
+  headline: What are we focusing on?
+  descriptionLineOne: |
+    If you’re <span class='white-underline'><b>developing Consumer Packaged Foods & Beverage, or running a small-medium scale food manufacturing</b></span>, our team is ready to assist you! Check our services!
+  descriptionLineTwo: Your success is exactly the reason why we do what we do now.
   testimonyLogos:
     - /assets/media/testimony/tacoelasa.png
     - /assets/media/testimony/ubae.png

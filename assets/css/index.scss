@@ -23,6 +23,10 @@
   transition: background-color $transitionDuration;
 }
 
+.white-underline {
+  box-shadow: 0 -7px 0 rgb(255, 255, 255) inset;
+}
+
 .section-one {
   background-color: #0D25FD;
   color: white;
@@ -63,6 +67,12 @@
 .section-two {
   background-color: $yellow;
   color: $blue;
+
+  .right-container {
+    .headline {
+      font-weight: bold;
+    }
+  }
 
   .testimony-col {
     overflow: hidden;
