@@ -1,5 +1,7 @@
 # Nutriolab 🍞 🌮 🥬
 
+*Analytics:* https://analytics.google.com/
+
 ## Instructions
 How to update:
 0. [SEO](#seo)
