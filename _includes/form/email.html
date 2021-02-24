@@ -1,0 +1,96 @@
+<div class="modal fade" id="modal-email" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class='container'>
+          <div class='row'>
+            <div class='close-container'>
+              <span data-dismiss="modal" aria-label="Close">
+                {% include svg/components/close.svg %}
+              </span>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>Full Name</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="fullName" placeholder="Type your full name here"/>
+                  <small id='fullName-helper-message' class='helper-message hide'>Required field</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>Email</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="email" placeholder="Type your email here" />
+                  <small id='email-helper-message' class='helper-message hide'>Required field</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>Whatsapp Number</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="whatsapp-number" placeholder="Type your Whatsapp number here" />
+                  <small id='whatsapp-number-helper-message' class='helper-message hide'>Required field</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>Business Name</b>
+                </div>
+                <div class='input'>
+                  <input name="business-name" placeholder="Type your business name here" />
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>Subject</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="subject" placeholder="Type your subject here" />
+                  <small id='subject-helper-message' class='helper-message hide'>Required field</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>Message</b>
+                  <span class="required">*</span>
+                </div>
+                <div class='input'>
+                  <textarea name='message' placeholder="Type your message here" rows="5"></textarea>
+                  <small id='message-helper-message' class='helper-message hide'>Required field</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12 text-right'>
+              <span class="send-button button">
+                {% if page.lang == 'id' %}
+                KIRIM
+                {% else %}
+                SEND
+                {% endif %}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

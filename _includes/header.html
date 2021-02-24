@@ -1,48 +1,7 @@
-{% assign langs = [🇬🇧, 🇮🇩] %}
 <div class='header'>
   <div class="container-fluid">
     <div class='logo-container'>
-      <svg id='logo' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 54" fill="none">
-        <path class='stroke-comm' d="M4 31V5.08197L60 25.4098V0" stroke="#FFFFFF" stroke-width="5"/>
-        <path class='stroke-comm' d="M0 50H65M0 39H65" stroke="#FFFFFF" stroke-width="7"/>
-      </svg>
-    </div>
-    <div id='lang-container' class='d-flex'>
-      <div class='select-lang'>
-        <span class='chosen-lang'>
-          {% if page.lang == 'en' %}
-            🇬🇧
-          {% else %}
-            🇮🇩
-          {% endif %}
-        </span>
-        {% include svg/lang_indicator.svg %} 
-      </div>
-      {% assign id = page.path | split: "/" | last | split: "." | first %}
-      <div id='lang-options' class='closed'>
-        {% if page.lang == 'en' %}
-        <div class='lang-option chosen'>
-        {% else %}
-        <div class='lang-option'>
-        {% endif %}
-          <span>
-            <a href='{{ site.data.en.menu[id].link }}'>
-              🇬🇧
-            </a>
-          </span>
-        </div>
-        {% if page.lang == 'id' %}
-        <div class='lang-option chosen'>
-        {% else %}
-        <div class='lang-option'>
-        {% endif %}
-          <span>
-            <a href='{{ site.data.id.menu[id].link }}'>
-              🇮🇩
-            </a>
-          </span>
-        </div>
-      </div>     
+      {% include svg/components/logo.svg %}
     </div>
   </div>
 </div>

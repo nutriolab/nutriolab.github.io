@@ -1,6 +1,6 @@
 ---
-permalink: /beranda
-title: Nutriolab - Beranda
+permalink: /
+title: Nutriolab
 lang: id
 layout: home
 ---

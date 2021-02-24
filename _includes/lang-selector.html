@@ -1,0 +1,40 @@
+{% assign id = page.path | split: "/" | last | split: "." | first %}
+{% assign langs = "🇬🇧,🇮🇩" | split: ',' %}
+{% assign links = site.data.en.menu[id].link | append: ", " | append: site.data.id.menu[id].link | split: "," %}
+{% if page.lang == 'en' %}
+{% assign isEn = true %}
+{% else %}
+{% assign isEn = false %}
+{% assign langs = langs | reverse %}
+{% assign links = links | reverse %}
+{% endif %}
+<div id='lang-container'>
+  <div class='select-lang d-flex align-items-center'>
+    <span class='chosen-lang'>
+      {{ langs[0] }}
+      {% include svg/components/chevron-down.svg %}
+    </span>
+    <div id='lang-options' class='closed'>
+      {% for lang in langs %}
+        {% if forloop.index0 == 0 %}
+        <div class='lang-option chosen'>
+        {% else %}
+        <div class='lang-option'>
+        {% endif %}
+        {% if forloop.index0 == 0 %}
+          <span>
+            {{ lang }}
+          </span>
+          {% include svg/components/chevron-down.svg %}
+        {% else %}
+          <span>
+            <a href='{{ links[forloop.index0] }}'>
+              {{ lang }}
+            </a>  
+          </span>  
+        {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

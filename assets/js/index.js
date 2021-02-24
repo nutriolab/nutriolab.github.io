@@ -80,7 +80,7 @@ const setupScroll = () => {
   }
   scenes[0].on('enter', () => {
     changeCommonEls('#0D25FD', 'white');
-    changeSocialMediaColors('#E7FB69');
+    changeSocialMediaColors('white');
   });
   scenes[1].on('enter', () => {
     changeCommonEls('rgb(231, 251, 105)', '#0D25FD');
@@ -108,7 +108,7 @@ const setupScroll = () => {
     triggerHook: 'onCenter'
   })
   .on('progress', () => {
-    circleBorder.style.strokeDashoffset = window.pageYOffset;
+    circleBorder.style.strokeDashoffset = -window.pageYOffset;
     lineConnector.style.webkitMaskPositionY = `${window.pageYOffset}px`;
     lineConnector.style.maskPositionY = `${window.pageYOffset}px`;
     endLineStroke.style.strokeDashoffset = `-${window.pageYOffset}`
@@ -125,8 +125,12 @@ const changeCommonEls = (bgColor, strokeColor) => {
   for (section of sections) {
     section.style.backgroundColor = bgColor;
   }
-  const circleBorder = document.getElementById('circle-border');
-  circleBorder.style.stroke = strokeColor;
+  const langChevron = document.getElementsByClassName('chevron-down')[0];
+  langChevron.style.fill = strokeColor;
+  const circleBorderOne = document.getElementById('circle-border-1');
+  const circleBorderTwo = document.getElementById('circle-border-2');
+  circleBorderOne.style.stroke = strokeColor;
+  circleBorderTwo.style.stroke = strokeColor;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.backgroundColor = strokeColor;
   const lineEnd = document.getElementsByClassName('rect-horizontal-stroke')[0];

@@ -25,15 +25,16 @@
     {% endfor %}
     <!--SEO-->
     <meta name="author" content="Nutriolab">
-    <meta name="keywords" content="nutriolab, nutribless, food science, food safety, food engineering, consultant, sensory, indonesia, enterprises, SME, food consultant, start up, affordable, food packaging, quality, nutrition, teknologi pangan, makanan, minuman, konsultan pangan, UMKM, bisnis makanan minuman, teknologi pangan, konsultasi online, bisnis kecil, nutrisi, bisnis kuliner, kuliner, jualan online" />
+    <meta name="keywords" content="{{ site.data[page.lang].default.seo.keywords }}" />
+    <meta name="description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}">
     <meta property="og:title" content="{{ page.title | default: 'Nutriolab' }}">
-    <meta property="og:description" content="{{ page.description | truncate: 156 }}">
-    <meta property="og:image" content="{{ page.seo_image_url | default: '/assets/media/seo.png' | absolute_url }}">
+    <meta property="og:description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}">
+    <meta property="og:image" content="{{ page.seo_image_url | default: site.data[page.lang].default.seo.image_url | absolute_url }}">
     <meta property="og:url" content="{{ page.permalink | default: page.url | absolute_url }}">
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="500" />
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="{{ page.description | truncate: 156 }}" />
+    <meta name="twitter:description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWJJ41DV58"></script>
     <script>
@@ -44,12 +45,18 @@
     </script>
   </head>
   <body>
-    {% include header.html %}
     {% include menu.html %}
+    {% include lang-selector.html %}
+    <div id='menu-overlay'></div>
+    {% include header.html %}
     {% include sider.html %}
-    {{ content }}
+    <div id='content'>
+      {{ content }}
+    </div>
     {% include footer.html %}
     <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     {% for js in layout.assets_js %}
     <script src="{{js}}"></script>
     {% endfor %}

@@ -12,9 +12,9 @@ assets_js:
 <div class="fixed-padded-section section-one d-flex">
   <div class='top container'>
     <div class="row vp-container align-items-start">
-      <div class="col-12 col-md-7 align-self-center mb-5 mb-md-0">
+      <div class="col-12 col-md-7 align-self-center mb-5 mb-md-0 pt-3 pb-3">
         <div class='circle'>
-          {% include svg/section_one/landing_circle.svg %}
+          {% include svg/section_one/landing_circle_v2.svg %}
         </div>
         <div class='line-connector'></div>
       </div>
@@ -69,15 +69,20 @@ assets_js:
       </div>
       <div class="col col-sm-12 col-md-5 align-self-center">
         <div class='right-container pl-0 pl-md-3 pr-4'>
-          <h1 class='headline'>
-            <div class='nutriolab-text blue'>{{ home.sectionTwo.headline }}</div>
-          </h1>
+          <p class='headline'>
+            {{ home.sectionTwo.headline }}
+          </p>
           <div class='description'>
-            {{ home.sectionTwo.description }} 
+            <p>
+              {{ home.sectionTwo.descriptionLineOne }} 
+            </p>
+            <p>
+              {{ home.sectionTwo.descriptionLineTwo }} 
+            </p>
           </div>
           <div class='logos'>
             {% for logo in home.sectionTwo.testimonyLogos %}
-            <img class='logo' loading='lazy' src='{{ logo }}' />
+            <img class='logo' loading='lazy' src='{{ logo.source }}' alt='{{ logo.name }}' />
             {% endfor %}
           </div>
           <span class='cta'>

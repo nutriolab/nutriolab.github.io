@@ -2,73 +2,48 @@
 layout: base
 assets_css:
   - assets/css/contact.css
+  - assets/css/form.css
 assets_js:
-  - assets/js/contact.js
+  - assets/js/form.js
 ---
 {% assign contact = site.data[page.lang].contact %}
 <div class='fixed-padded-content contact'>
   <div class='container'>
     <div class='row'>
-      <div class='col-12'>
+      <div class='col-12 mb-4'>
         <h1 class='title'>{{ contact.header }}</h1>
       </div>
       <div class='col-12'>
-        <div class='input-container'>
-          <div class='label'>
-            <b>Full Name</b>
-            <span class='required'>*</span>
+        <div class='part-one d-flex'>
+          <div class='part-container flex-grow-1'>
+            <h2 class='title'>{{ contact.partOne.title }}</h2>
+            {% for message in contact.partOne.messages %}
+              <p class='message'>{{ message }}</p>
+            {% endfor %}
           </div>
-          <div class='input'>
-            <input name="fullName" placeholder="Type your full name here"/>
-            <small id='fullName-helper-message' class='helper-message hide'>Required field</small>
-          </div>
-        </div>
-      </div>
-      <div class='col-12'>
-        <div class='input-container'>
-          <div class='label'>
-            <b>Email</b>
-            <span class='required'>*</span>
-          </div>
-          <div class='input'>
-            <input name="email" placeholder="Type your email here" />
-            <small id='email-helper-message' class='helper-message hide'>Required field</small>
+          <div>
+            <span class='button' data-toggle="modal" data-target="#modal-part-one">
+              {{ contact.partOne.buttonText }}
+            </span>
           </div>
         </div>
-      </div>
-      <div class='col-12'>
-        <div class='input-container'>
-          <div class='label'>
-            <b>Subject</b>
-            <span class='required'>*</span>
+        <hr>
+        <div class='part-two d-flex'>
+          <div class='part-container flex-grow-1'>
+            <h2 class='title'>{{ contact.partTwo.title }}</h2>
+            {% for message in contact.partTwo.messages %}
+              <p class='message'>{{ message }}</p>
+            {% endfor %}
           </div>
-          <div class='input'>
-            <input name="subject" placeholder="Type your subject here" />
-            <small id='subject-helper-message' class='helper-message hide'>Required field</small>
-          </div>
-        </div>
-      </div>
-      <div class='col-12'>
-        <div class='input-container'>
-          <div class='label'>
-            <b>Message</b>
-            <span class="required">*</span>
-          </div>
-          <div class='input'>
-            <textarea name='message' placeholder="Type your message here" rows="5"></textarea>
-            <small id='message-helper-message' class='helper-message hide'>Required field</small>
+          <div>
+            <span class='button' data-toggle="modal" data-target="#modal-part-two">
+              {{ contact.partTwo.buttonText }}
+            </span>
           </div>
         </div>
-      </div>
-      <div class='col-12'>
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/nutriolab-id" style="min-width:320px;height:630px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-        <!-- Calendly inline widget end -->
-      </div>
-      <div class='col-12 text-right'>
-        <button class='send-button'>{{ contact.sendButton.text }}</button>
       </div>
     </div>
   </div>
 </div>
+{% include form/calendly.html %}
+{% include form/email.html %}
