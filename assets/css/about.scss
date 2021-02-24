@@ -6,6 +6,10 @@
   stroke: $blue;
 }
 
+.line-connector {
+  background-color: $blue;
+}
+
 .footer-container {
   background-color: $yellow;
   transition: background-color $transitionDuration;
@@ -34,19 +38,15 @@
   overflow: hidden;
 
   .top {
-    .cta {
-      text-align: right;
+    margin-bottom: 20px;
 
+    .cta {
       .button {
         display: inline-block;
         padding: 0 7px;
-        border-bottom: 5px solid $gray;
+        box-shadow: 0 -10px 0 $gray inset;
       }
     }
-  }
-
-  .about-us-title {
-    margin-bottom: 50px;
   }
 
   .vision {
@@ -55,6 +55,7 @@
 
   .values {
     display: inline-block;
+    margin-top: 30px;
 
     .value {
       $borderRadius: 5px;
@@ -87,21 +88,19 @@
 }
 
 .cta-container {
-  background-color: $yellow;
-  position: relative;
-  padding: 20px;
+  padding: 20px 0 40px 0;
+}
 
-  .cta {
-    color: $blue;
-    box-shadow: 0 -5px 0 $gray inset;
-    position: absolute;
-    padding-right: 10px;
-  }
+.cta {
+  color: $blue;
+  padding-right: 10px;
+}
 
-  .cta-2 {
-    top: 50%;
-    right: 0%;
-    width: 50%;
-    max-width: 200px;
-  }
+.cta-2 {
+  z-index: 1;
+  position: absolute;
+  right: 0%;
+  width: 65%;
+  max-width: 200px;
+  box-shadow: 0 -5px 0 $gray inset;
 }
