@@ -1,4 +1,4 @@
-const setup = () => {
+const setupForm = () => {
   const sendButton = document.getElementsByClassName('send-button')[0];
   sendButton.onclick = () => {
     let valid = true;
@@ -45,13 +45,6 @@ const setup = () => {
 
     console.log(fullName.value, email.value, whatsappNumber.value, businessName.value, subject.value, message.value);
   };
-
-  const closeHandler = () => {
-    const closeButton = document.getElementsByClassName('close-button');
-    closeButton.onclick = () => {
-
-    }
-  }
 
   const setHelperMessage = (inputElement, isDisplayed) => {
     const helperMessage = document.getElementById(inputElement.name + "-helper-message");

@@ -32,7 +32,7 @@
       box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.4) inset;
     }
     
-    .options {
+    .options, .keep-options {
       &.hide {
         display: none;
       }
@@ -45,6 +45,7 @@
         border-bottom-left-radius: $borderRadius;
         border-bottom-right-radius: $borderRadius;
         padding: 15px 10px;
+        cursor: pointer;
 
         .option-title {
           .option-no {
@@ -62,6 +63,10 @@
         .option-desc {
           font-weight: 100;
           margin-bottom: 5px;
+
+          &.bold {
+            font-weight: bold;
+          }
         }
 
         .features {

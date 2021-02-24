@@ -38,6 +38,7 @@ const commonSetup = () => {
 const bootstrap = () => {
   commonSetup();
   typeof setup !== 'undefined' && setup();
+  typeof setupForm !== 'undefined' && setupForm();
 }
 
 window.onload = bootstrap;

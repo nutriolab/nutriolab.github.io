@@ -1,151 +1,79 @@
 header: Services
-message: |
-  Complementary Introductory Call (15 mins)
-  General Consultancy (Product / Technical) – Rp 200-500k
 packages:
-  - name: Package A - General Food Science
+  - name:
     options:
-      - title: 101
-        name: Basic
-        description: Q&A covering basic food science and general food product development.
+      - title:
+        name: Free Introductory Call
+        description: 
+          normal: It’s FREE! Tell us your problem and we are ready to help you! Sign up now to get your free call!
+        services:
+          - ++ Consultation (15 min)
+        price:
+          text: 'Sign Up Now!'
+        goTo: calendly
+      - title:
+        name: General Consultancy
+        description: 
+          normal: Consult up to 50 mins for more specific technical issues with our tailored specialist. You will get a summary of the consultancy meeting.
         services:
           - ++ Consultation (50 min)
+          - ++ Report Delivery
         price:
-          value: '750'
+          text: '250'
           cardinal: k
-      - title: 102
-        name: Standard
-        description: Standard consultation covering food science, general food product development/innovation.
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-        price:
-          value: '1,25'
-          cardinal: mio
-      - title: 103
-        name: Premium
-        description: In-depth consultation in food science, daily findings with no specific topic, tips and trick, ideation, general product development/innovation brainstorm, product values & uniqueness
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-          - ++ Testing / Analysis
-  - name: Package B - Food Processing
+        goTo: calendly
+  - name: Technical Services
     options:
-      - title: 101
-        name: Basic
-        description: Q&A covering basic application of food engineering, including process selection, process parameters and basic production flow.
-        services:
-          - ++ Consultation (50 min)
+      - title: T01
+        name: Nutrition Labelling & Claim
+        description: 
+          bold: Now you can put the nutrition label on your product! Showcase how nutritious your product is! 
+          normal: Nutrition facts label, claim suggestions
         price:
-          value: '1,5'
-          cardinal: mio
-      - title: 102
-        name: Standard
-        description: Standard consultation covering basic application of food engineering, including process selection, process parameters and basic production flow - food safety focus.
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
+          text: 'contact us for pricing'
+        goTo: email
+      - title: T02
+        name: Product Profiling
+        description: 
+          bold: Understand your product like understanding your girlfriend! 
+          normal: Risk profile, quality & safety assessment, sensory evaluation, shelf-life study, packaging selection
         price:
-          value: '2,0'
-          cardinal: mio
-      - title: 103
-        name: Premium
-        description: |
-          In-depth consultation related to 
-          (1) Home scale production: processing parameters, equipment, quality/ safety, 
-          (2) Mid-pilot scale production: processing parameters, equipment, quality/safety, 
-          (3) Management production  (PPIC, scheduling, scaling up, production flow), hygienic design - food safety focus. 
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-          - ++ Testing / Analysis
-  - name: Package C - Food Packaging
+          text: 'contact us for pricing'
+        goTo: email
+      - title: T03
+        name: Process Optimization Roadmap
+        description: 
+          bold: Save up your time and money by optimizing your process design! 
+          normal: Standardized process, process parameter & specification, HACCP plan
+        price:
+          text: 'contact us for pricing'
+        goTo: email
+      - title: T04
+        name: Production Scale-up Roadmap
+        description: 
+          bold: Your business is growing quickly? Time to scale it up! Now you can turn your garage into a small food factory!
+          normal: production management, standardized process, process parameter & specification, HACCP Plan 
+        price:
+          text: 'contact us for pricing'
+        goTo: email
+  - name: Certification Planning & Regulatory Services
     options:
-      - title: 101
-        name: Basic
-        description: Q&A covering basic insight of food packaging selection and food shelf-life.
-        services:
-          - ++ Consultation (50 min)
+      - title: R01
+        name: Halal Certification Roadmap
+        description: 
+          bold: Be more confident in your product by complying to the standard!
+          normal: Halal certification requirements and planning 
         price:
-          value: '1'
-          cardinal: mio
-      - title: 102
-        name: Standard
-        description: Standard consultation covering food packaging selection, food shelf-life determination, and food labeling.
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
+          text: 'contact us for pricing'
+        goTo: email
+      - title: R02
+        name: Other Regulatory Certification
+        description: 
+          bold: We’re working on it, we’ll bring it to you as soon as possible.
+          normal: Feel free to contact us if you’re interested
         price:
-          value: '1,5'
-          cardinal: mio
-      - title: 103
-        name: Premium
-        description: |
-          In-depth analysis related to 
-          (1) Packaging selection, food packaging interaction, package assessment, 
-          (2) Appropriate generic claims & labelling - food regulation and standard  (PIRT, BPOM, Halal), 
-          (3) Product shelf-life limitation. how to predict shelf life (testing, estimation, literature review, mini trial), prolong product shelf life. 
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-          - ++ Testing / Analysis
-  - name: Package D - Nutrition
-    options:
-      - title: 101
-        name: Basic
-        description: Q&A covering basic analysis of product value like nutrition and health benefit.
-        services:
-          - ++ Consultation (50 min)
-        price:
-          value: '1'
-          cardinal: mio
-      - title: 102
-        name: Standard
-        description: Standard consultation covering analysis of product value (nutrition, health benefits, functionality).
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-        price:
-          value: '1,5'
-          cardinal: mio
-      - title: 103
-        name: Premium
-        description: |
-          In-depth analysis of product value (nutrition, health benefits, functionality), appropriate nutrition/health claims & nutrition-facts label
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-          - ++ Testing / Analysis
-  - name: Package E - Consumer Study
-    options:
-      - title: 101
-        name: Basic
-        description: Q&A covering basic sensory evaluation design.
-        services:
-          - ++ Consultation (50 min)
-        price:
-          value: '1'
-          cardinal: mio
-      - title: 102
-        name: Standard
-        description: Standard consultation covering sensory evaluation design and customer feedback, and basic product positioning.
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-        price:
-          value: '1,5'
-          cardinal: mio
-      - title: 103
-        name: Premium
-        description: |
-          In-depth analysis covering 
-          (1) Sensory evaluation design and customer feedback, 
-          (2) Product positioning, competitiveness, branding (business development), 
-          (3) Finance and cost analysis - how to define product value and business development.
-        services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
-          - ++ Testing / Analysis
+          text: 'coming soon'
+        goTo: email
 postPackages:
   title: Other inquiries
   message: Don’t see you issues up there? Let us know through complementary introductory call or general inquires.

@@ -2,8 +2,10 @@
 layout: base
 assets_css:
   - assets/css/services.css
+  - assets/css/form.css
 assets_js:
   - assets/js/services.js
+  - assets/js/form.js
 ---
 {% assign services = site.data[page.lang].services %}
 <div class='services'>
@@ -13,51 +15,71 @@ assets_js:
         <div class='col-12 header-title'>
           <h1>{{ services.header }}</h1>
         </div>
-        <div class='col-12'>
-          <p class='mb-4'>{{ services.message }}</p>
-        </div>
         <div class='col-12 mb-3'>
           {% for package in services.packages %}
             <div class='package'>
-              <div class='mb-3'>
-                <span class='title'>
-                  {{ package.name }}
-                  {% include svg/components/chevron-down.svg %}
-                </span>
-              </div>
+              {% if package.name %}
+                <div class='mb-3'>
+                  <span class='title'>
+                    {{ package.name }}
+                    {% include svg/components/chevron-down.svg %}
+                  </span>
+                </div>
+              {% endif %}
+              {% if package.name %}
               <div class='options hide'>
+              {% else %}
+              <div class='keep-options'>
+              {% endif %}
                 <div class='row d-flex align-items-stretch mb-3'>
                   {% for option in package.options %}
                     <div class='col-xs-12 col-sm-6 col-md-4 mb-3'>
+                      {% if option.goTo == 'calendly' %}
+                      <div class='option d-flex flex-column' data-toggle="modal" data-target="#modal-calendly">
+                      {% else if option.goTo == 'email' %}
+                      <div class='option d-flex flex-column' data-toggle="modal" data-target="#modal-email">
+                      {% else %}
                       <div class='option d-flex flex-column'>
-                        <div class='option-title'>
+                      {% endif %}
+                        <div class='option-title mb-2'>
+                          {% if option.title %}
                           <span class='option-no'>
                             {{ option.title }}
                           </span>
+                          {% endif %}
                           <span class='option-name'>
                             {{ option.name }}
                           </span>
                         </div>
+                        {% if option.description.bold %}
+                        <div class='option-desc bold'>
+                          {{ option.description.bold }}
+                        </div>
+                        {% endif %}
+                        {% if option.description.normal %}
                         <div class='option-desc'>
-                          {{ option.description }}
+                          {{ option.description.normal }}
                         </div>
-                        <div class='features'>
-                          {% for service in option.services %}
-                            <div class='feature'>
-                              {{ service }}
-                            </div>
-                          {% endfor %}
-                        </div>
-                        {% if option.price.value and option.price.cardinal %}
-                        <div class='price mt-auto ml-auto d-flex'>
+                        {% endif %}
+                        {% if option.services %}
+                          <div class='features'>
+                            {% for service in option.services %}
+                              <div class='feature'>
+                                {{ service }}
+                              </div>
+                            {% endfor %}
+                          </div>
+                        {% endif %}
+                        {% if option.price.text and option.price.cardinal %}
+                        <div class='price mt-auto ml-auto d-flex mt-2'>
                           <div class='currency align-self-start'><small>idr</small></div>
-                          <div class='value'>{{ option.price.value }}</div>
+                          <div class='value'>{{ option.price.text }}</div>
                           <div class='cardinal align-self-end'>{{ option.price.cardinal }}</div>
                         </div>
                         {% else %}
                         <div class='price mt-auto ml-auto'>
                           <div class='note'>
-                            <i><small>contact us for pricing</small></i>
+                            <i>{{ option.price.text }}</i>
                           </div>
                         </div>
                         {% endif %}
@@ -84,3 +106,5 @@ assets_js:
     </div>
   </div>
 </div>
+{% include form/calendly.html %}
+{% include form/email.html %}

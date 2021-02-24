@@ -1,4 +1,4 @@
-<div class="modal fade" id="modal-part-two" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+<div class="modal fade" id="modal-email" tabindex="-1" aria-labelledby="email" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-body">
@@ -80,7 +80,13 @@
               </div>
             </div>
             <div class='col-12 text-right'>
-              <span class="send-button button">{{ contact.emailUsButtonText }}</button>
+              <span class="send-button button">
+                {% if page.lang == 'id' %}
+                KIRIM
+                {% else %}
+                SEND
+                {% endif %}
+              </button>
             </div>
           </div>
         </div>
