@@ -20,9 +20,12 @@ sectionTwo:
     If you’re <span class='white-underline'><b>developing Consumer Packaged Foods & Beverage, or running a small-medium scale food manufacturing</b></span>, our team is ready to assist you! Check our services!
   descriptionLineTwo: Your success is exactly the reason why we do what we do now.
   testimonyLogos:
-    - /assets/media/testimony/tacoelasa.png
-    - /assets/media/testimony/ubae.png
-    - /assets/media/testimony/kisahtani.png
+    - name: Taco El Asa
+      source: /assets/media/testimony/tacoelasa.png
+    - name: Ubae
+      source: /assets/media/testimony/ubae.png
+    - name: Kisah Tani
+      source: /assets/media/testimony/kisahtani.png
   cta: 
     name: Consult with us!
     link: /contact

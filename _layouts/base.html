@@ -26,6 +26,7 @@
     <!--SEO-->
     <meta name="author" content="Nutriolab">
     <meta name="keywords" content="{{ site.data[page.lang].default.seo.keywords }}" />
+    <meta name="description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}">
     <meta property="og:title" content="{{ page.title | default: 'Nutriolab' }}">
     <meta property="og:description" content="{{ page.description | default: site.data[page.lang].default.seo.description | truncate: 156 }}">
     <meta property="og:image" content="{{ page.seo_image_url | default: site.data[page.lang].default.seo.image_url | absolute_url }}">
