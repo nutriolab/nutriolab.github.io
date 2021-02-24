@@ -6,8 +6,8 @@ assets_js:
   - assets/js/team.js
 ---
 {% assign team = site.data[page.lang].team %}
+<div class='line-connector'></div>
 <div class='fixed-padded-content team'>
-  <div class='line'></div>
   <div class='container'>
     <div class='row'>
       <div class='col-10 team-section'>
@@ -50,7 +50,7 @@ assets_js:
         {% endfor %}
       </div>
       <div class='col-2'>
-        <h3>
+        <h3 class='pl-3 pr-3'>
           <b>
             {{ team.headline }}
           </b>
