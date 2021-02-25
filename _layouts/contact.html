@@ -14,7 +14,7 @@ assets_js:
         <h1 class='title'>{{ contact.header }}</h1>
       </div>
       <div class='col-12'>
-        <div class='part-one d-flex'>
+        <div class='part-one d-flex flex-wrap'>
           <div class='part-container flex-grow-1'>
             <h2 class='title'>{{ contact.partOne.title }}</h2>
             {% for message in contact.partOne.messages %}
@@ -22,13 +22,13 @@ assets_js:
             {% endfor %}
           </div>
           <div>
-            <span class='button' data-toggle="modal" data-target="#modal-part-one">
+            <span class='button' data-toggle="modal" data-target="#modal-calendly">
               {{ contact.partOne.buttonText }}
             </span>
           </div>
         </div>
         <hr>
-        <div class='part-two d-flex'>
+        <div class='part-two d-flex flex-wrap'>
           <div class='part-container flex-grow-1'>
             <h2 class='title'>{{ contact.partTwo.title }}</h2>
             {% for message in contact.partTwo.messages %}
@@ -36,7 +36,7 @@ assets_js:
             {% endfor %}
           </div>
           <div>
-            <span class='button' data-toggle="modal" data-target="#modal-part-two">
+            <span class='button' data-toggle="modal" data-target="#modal-email">
               {{ contact.partTwo.buttonText }}
             </span>
           </div>
