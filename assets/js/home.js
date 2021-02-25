@@ -36,11 +36,13 @@ const setupSectionTwo = () => {
 const setupConnectorLine = () => {
   const circle = document.getElementsByClassName('circle')[0];
   let sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
+  sections.pop();
   const extraSections = Array.from(document.getElementsByClassName('extra-section'));
+  extraSections.pop();
   sections = sections.concat(extraSections);
   
   let height = 0;
-  for (let i = 0; i < sections.length - 1; i++) {
+  for (let i = 0; i < sections.length ; i++) {
     height += sections[i].getBoundingClientRect().height;
   }
   height = height - (circle.offsetParent.clientHeight / 2) - circle.offsetParent.offsetTop;
@@ -55,7 +57,9 @@ const setupEndLine = () => {
   const endLineSvg = endLine.getElementsByTagName('svg')[0];
   endLine.style.width = `${landingCirclePosition.x + (landingCircle.clientWidth * 2)}px`;
   endLine.style.left = `-${landingCircle.clientWidth + 1}px`;
-  endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`;
+  endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`
+  const sectionFourLine = document.getElementsByClassName('section-four-end-line')[0];
+  sectionFourLine.style.height = `${endLineSvg.clientHeight * (1/4)}px`;
 }
 
 const setupScroll = () => {

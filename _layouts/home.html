@@ -129,22 +129,32 @@ assets_js:
   </div>
 </div>
 <div class='extra-section section-three'></div>
-<div class="last fixed-padded-section section-four d-flex">
+<div class='extra-section section-four-end-line section-four'>
   <div class='line-end'>
     {% include svg/components/rect-horizontal.svg %}
   </div>
-  <div class='cta'>
+</div>
+<div class="last fixed-padded-section section-four section-four-content d-flex">
+  <!-- <div class='cta'>
     <a href='{{ home.sectionFour.cta.link }}'>
       <b>
         {{ home.sectionFour.cta.name }}
       </b>
     </a>
-  </div>
+  </div> -->
   <div class='top container'>
-    <div class="row vp-container align-items-center justify-content-center">
-      <div class='text-container'>
+    <div class="row flex-column align-items-center">
+      <div class='text-container mb-5'>
         <h2 class='alata'>{{ home.sectionFour.textFirstLine }}</h2>
         <h2 class='alata'><b>{{ home.sectionFour.textSecondLine }}</b></h2>
+      </div>
+      <h5>{{ home.sectionFour.affiliates.title }}</h5>
+      <div class='text-container d-flex align-items-center'>
+        <div class='affiliates-container d-flex flex-wrap align-items-center justify-content-center'>
+          {% for aff in site.data.affiliates %}
+            <img class="aff" alt="{{ aff.name }}" src="{{ aff.source }}" />
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

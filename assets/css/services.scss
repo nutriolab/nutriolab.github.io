@@ -118,3 +118,11 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: $smallBreakpoint) {
+  .services {
+    .header-title {
+      top: $m-total-padding + $m-logo-height;
+    }
+  }
+}
