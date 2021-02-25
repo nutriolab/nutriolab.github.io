@@ -34,8 +34,7 @@ const setupSectionTwo = () => {
 }
 
 const setupConnectorLine = () => {
-  const sectionOne = document.getElementsByClassName('section-one')[0];
-  const sectionOnePosition = sectionOne.getBoundingClientRect();
+  const circle = document.getElementsByClassName('circle')[0];
   let sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
   const extraSections = Array.from(document.getElementsByClassName('extra-section'));
   sections = sections.concat(extraSections);
@@ -44,7 +43,7 @@ const setupConnectorLine = () => {
   for (let i = 0; i < sections.length - 1; i++) {
     height += sections[i].getBoundingClientRect().height;
   }
-  height = height - (sectionOnePosition.height / 2);
+  height = height - (circle.offsetParent.clientHeight / 2) - circle.offsetParent.offsetTop;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.height = `${height}px`;
 }
