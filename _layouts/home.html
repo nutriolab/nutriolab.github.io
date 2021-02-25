@@ -1,12 +1,12 @@
 ---
 layout: base
 assets_css:
-  - assets/css/index.css
+  - assets/css/home.css
 assets_js:
   - https://cdn.jsdelivr.net/npm/scrollmagic@2.0.7/scrollmagic/uncompressed/ScrollMagic.min.js
   # ScrollMagic debugger
   # - http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js
-  - assets/js/index.js
+  - assets/js/home.js
 ---
 {% assign home = site.data[page.lang].home %}
 <div class="fixed-padded-section section-one d-flex">
@@ -129,10 +129,12 @@ assets_js:
   </div>
 </div>
 <div class='extra-section section-three'></div>
-<div class="last fixed-padded-section section-four d-flex">
+<div class='extra-section section-four-end-line section-four'>
   <div class='line-end'>
     {% include svg/components/rect-horizontal.svg %}
   </div>
+</div>
+<div class="last fixed-padded-section section-four section-four-content d-flex">
   <div class='cta'>
     <a href='{{ home.sectionFour.cta.link }}'>
       <b>
@@ -141,10 +143,18 @@ assets_js:
     </a>
   </div>
   <div class='top container'>
-    <div class="row vp-container align-items-center justify-content-center">
-      <div class='text-container'>
+    <div class="row flex-column align-items-center">
+      <div class='text-container mb-5'>
         <h2 class='alata'>{{ home.sectionFour.textFirstLine }}</h2>
         <h2 class='alata'><b>{{ home.sectionFour.textSecondLine }}</b></h2>
+      </div>
+      <h5>{{ home.sectionFour.affiliates.title }}</h5>
+      <div class='text-container d-flex align-items-center'>
+        <div class='affiliates-container d-flex flex-wrap align-items-center justify-content-center'>
+          {% for aff in site.data.affiliates %}
+            <img class="aff" alt="{{ aff.name }}" src="{{ aff.source }}" />
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

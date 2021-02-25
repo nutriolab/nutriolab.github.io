@@ -34,17 +34,18 @@ const setupSectionTwo = () => {
 }
 
 const setupConnectorLine = () => {
-  const landingCircle = document.getElementsByClassName('circle')[0];
-  const landingCirclePosition = landingCircle.getBoundingClientRect();
+  const circle = document.getElementsByClassName('circle')[0];
   let sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
+  sections.pop();
   const extraSections = Array.from(document.getElementsByClassName('extra-section'));
+  extraSections.pop();
   sections = sections.concat(extraSections);
   
   let height = 0;
-  for (let i = 0; i < sections.length - 1; i++) {
-    height += sections[i].clientHeight;
+  for (let i = 0; i < sections.length ; i++) {
+    height += sections[i].getBoundingClientRect().height;
   }
-  height = height - (landingCirclePosition.height / 2) - landingCircle.offsetParent.offsetTop;
+  height = height - (circle.offsetParent.clientHeight / 2) - circle.offsetParent.offsetTop;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.height = `${height}px`;
 }
@@ -55,8 +56,10 @@ const setupEndLine = () => {
   const endLine = document.getElementsByClassName('line-end')[0];
   const endLineSvg = endLine.getElementsByTagName('svg')[0];
   endLine.style.width = `${landingCirclePosition.x + (landingCircle.clientWidth * 2)}px`;
-  endLine.style.left = `-${landingCircle.clientWidth}px`;
-  endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`;
+  endLine.style.left = `-${landingCircle.clientWidth + 1}px`;
+  endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`
+  const sectionFourLine = document.getElementsByClassName('section-four-end-line')[0];
+  sectionFourLine.style.height = `${endLineSvg.clientHeight * (1/4)}px`;
 }
 
 const setupScroll = () => {
@@ -108,7 +111,7 @@ const setupScroll = () => {
     triggerHook: 'onCenter'
   })
   .on('progress', () => {
-    circleBorder.style.strokeDashoffset = -window.pageYOffset;
+    circleBorder.style.strokeDashoffset = window.pageYOffset;
     lineConnector.style.webkitMaskPositionY = `${window.pageYOffset}px`;
     lineConnector.style.maskPositionY = `${window.pageYOffset}px`;
     endLineStroke.style.strokeDashoffset = `-${window.pageYOffset}`
@@ -127,10 +130,8 @@ const changeCommonEls = (bgColor, strokeColor) => {
   }
   const langChevron = document.getElementsByClassName('chevron-down')[0];
   langChevron.style.fill = strokeColor;
-  const circleBorderOne = document.getElementById('circle-border-1');
-  const circleBorderTwo = document.getElementById('circle-border-2');
-  circleBorderOne.style.stroke = strokeColor;
-  circleBorderTwo.style.stroke = strokeColor;
+  const circleBorder = document.getElementById('circle-border');
+  circleBorder.style.stroke = strokeColor;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.backgroundColor = strokeColor;
   const lineEnd = document.getElementsByClassName('rect-horizontal-stroke')[0];

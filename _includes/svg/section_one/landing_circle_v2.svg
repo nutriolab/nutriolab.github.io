@@ -1,23 +1,23 @@
-<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="722" height="719" viewBox="0 0 722 719" fill="none" class='dashed-circle'>
-    <path id="circle-border-1" d="M359 9.99998C553.957 9.99999 712 168.044 712 363" stroke="white" stroke-width="18" stroke-dasharray="3 8" vector-effect="non-scaling-stroke" />
-    <path id="circle-border-2" d="M359 709C166.253 709 10 550.957 10 356" stroke="white" stroke-width="18" stroke-dasharray="3 8" vector-effect="non-scaling-stroke" />
-    <path d="M359 0C160.73 0 0 160.73 0 359H359V0Z" fill="white"/>
-    <path d="M102 359C102 217.063 217.063 102 359 102" stroke="#0D25FD" stroke-width="10"/>
-    <path d="M64 359C64 522.476 196.076 655 359 655L359 359L64 359Z" fill="white" fill-opacity="0.8"/>
-    <path d="M359 551C252.961 551 167 465.039 167 359" stroke="#0D25FD" stroke-width="5"/>
-    <path d="M359 567.5C244.125 567.5 150 473.875 150 359" stroke="#0D25FD" stroke-width="10"/>
-    <path d="M359 719C557.823 719 719 558.27 719 360L359 360L359 719Z" fill="white" fill-opacity="0.5"/>
-    <rect x="359" y="30" width="298" height="330" fill="url(#pattern0)"/>
-    <path d="M359 623C523.581 623 657 504.803 657 359L359 359L359 623Z" fill="url(#pattern1)" fill-opacity="0.3"/>
-    <rect x="396.2" y="170.63" width="112" height="19" transform="rotate(-9.75955 396.2 170.63)" fill="#0D25FD" fill-opacity="0.8"/>
+<svg width="100%" height="100%" viewBox="0 0 365 385" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class='dashed-circle'>
     <defs>
-        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#image0" transform="translate(-0.438062 -0.262185) scale(0.000953308)"/>
-        </pattern>
-        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#image1" transform="translate(1.4433 2.54632) scale(0.000958971 0.00106131) rotate(180)"/>
-        </pattern>
-        <image id="image0" width="2193" height="2502" href="/assets/media/nathan-dumlao.png" />
-        <image id="image1" width="2193" height="2502" href="/assets/media/nathan-dumlao.png" />
+        <path d="M182.5,383.5 C282.46354,383.5 363.5,297.76253 363.5,192 C363.5,86.2374704 282.46354,0.5 182.5,0.5 C82.5364603,0.5 1.5,86.2374704 1.5,192 C1.5,297.76253 82.5364603,383.5 182.5,383.5 Z" id="circle-border" vector-effect="non-scaling-stroke"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="362" height="383" fill="white">
+            <use xlink:href="#circle-border"></use>
+        </mask>
     </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.500000, 0.500000)">
+            <use id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="34" stroke-dasharray="3,8" xlink:href="#circle-border"></use>
+            <path d="M362.994921,192.5 C363.329659,192.5 363.664184,192.500969 363.998495,192.502905 L363.996847,383.5 L182.498847,383.498974 C183.000441,278.979978 262.012874,194.215842 360.010048,192.525723 Z" id="Combined-Shape" fill="#0D25FD" transform="translate(273.248847, 288.000000) rotate(-180.000000) translate(-273.248847, -288.000000) "></path>
+            <image id="nathan-dumlao-hMReyPJKEUU-unsplash-(1)" x="174" y="40" width="158" height="276" href="/assets/media/nathan-dumlao.png" />
+            <path d="M182.5,0 C81.7081476,0 0,86.1853064 0,192.5 L182.5,192.5 L182.5,0 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M53.5,192.5 C53.5,116.284802 111.255358,54.5 182.5,54.5" id="Path" stroke="#0D25FD" stroke-width="10"></path>
+            <path d="M33.5,192.5 C33.5,279.760838 100.209573,350.5 182.5,350.5 L182.5,192.5 L33.5,192.5 Z" id="Path" fill="#CFD3FF" fill-rule="nonzero"></path>
+            <path d="M182.5,295.5 C128.928214,295.5 85.5,249.385505 85.5,192.5" id="Path" stroke="#0D25FD" stroke-width="5"></path>
+            <path d="M182.5,306.5 C122.589115,306.5 73.5,255.309353 73.5,192.5" id="Path" stroke="#0D25FD" stroke-width="10"></path>
+            <path d="M182.5,384.5 C282.739929,384.5 364,298.538552 364,192.5 L182.5,192.5 L182.5,384.5 Z" id="Path" fill-opacity="0.5" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M182.5,384.5 C282.463786,384.5 363.5,298.538552 363.5,192.5 C354.630008,193.166667 343.528346,193.5 330.195012,193.5 C325.587722,233.5 289.101071,279.273536 258.5,294.394288 C233.419558,306.78716 208.086224,314.860553 182.5,318.614467" id="Path" fill="#8692FE" fill-rule="nonzero"></path>
+            <polygon id="Path" fill-opacity="0.8" fill="#0D25FD" fill-rule="nonzero" points="249.224076 92.5 205.5 103.072395 206.775924 113.5 250.5 102.927605"></polygon>
+        </g>
+    </g>
 </svg>

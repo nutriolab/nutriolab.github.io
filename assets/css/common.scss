@@ -108,7 +108,7 @@ a:hover {
   z-index: 1;
   width: $line-width;
   position: absolute;
-  right: 15px;
+  right: 16px;
   transition: background-color $transitionDuration;
 }
 
@@ -169,7 +169,7 @@ body {
   }
 
   #menu.closed {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 10px));
   }
 
   .sider {
@@ -200,10 +200,6 @@ body {
     min-height: 100vh;
     height: auto;
     transition: background-color $transitionDuration;
-  }
-
-  .fixed-padded-section.last {
-    min-height: 100vh;
   }
 
   .vp-container {

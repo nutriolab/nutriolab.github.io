@@ -1,0 +1,20 @@
+- name: MIT
+  source: /assets/media/affiliates/Logo-MIT.png
+- name: UCL
+  source: /assets/media/affiliates/Logo-UCL.png
+- name: Lund
+  source: /assets/media/affiliates/Logo-Lund.png
+- name: Tetrapak
+  source: /assets/media/affiliates/Logo-Tetrapak.png
+- name: MIT Sandbox
+  source: /assets/media/affiliates/Logo-Sandbox.png
+- name: Wageningen
+  source: /assets/media/affiliates/Logo-wageningen.png
+- name: Parsons
+  source: /assets/media/affiliates/Logo-parsons.png
+- name: IPB
+  source: /assets/media/affiliates/Logo-IPB.png
+- name: Iowa State University
+  source: /assets/media/affiliates/Logo-iowa.png
+- name: Stemgems
+  source: /assets/media/affiliates/Logo-Stemgems.png
