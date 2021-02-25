@@ -7,7 +7,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group" transform="translate(0.500000, 0.500000)">
-            <use id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="35" stroke-dasharray="3,8" xlink:href="#circle-border"></use>
+            <use id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="34" stroke-dasharray="3,8" xlink:href="#circle-border"></use>
             <path d="M362.994921,192.5 C363.329659,192.5 363.664184,192.500969 363.998495,192.502905 L363.996847,383.5 L182.498847,383.498974 C183.000441,278.979978 262.012874,194.215842 360.010048,192.525723 Z" id="Combined-Shape" fill="#0D25FD" transform="translate(273.248847, 288.000000) rotate(-180.000000) translate(-273.248847, -288.000000) "></path>
             <image id="nathan-dumlao-hMReyPJKEUU-unsplash-(1)" x="174" y="40" width="158" height="276" href="/assets/media/nathan-dumlao.png" />
             <path d="M182.5,0 C81.7081476,0 0,86.1853064 0,192.5 L182.5,192.5 L182.5,0 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>

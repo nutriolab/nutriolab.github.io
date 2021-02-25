@@ -34,17 +34,17 @@ const setupSectionTwo = () => {
 }
 
 const setupConnectorLine = () => {
-  const landingCircle = document.getElementsByClassName('circle')[0];
-  const landingCirclePosition = landingCircle.getBoundingClientRect();
+  const sectionOne = document.getElementsByClassName('section-one')[0];
+  const sectionOnePosition = sectionOne.getBoundingClientRect();
   let sections = Array.from(document.getElementsByClassName('fixed-padded-section'));
   const extraSections = Array.from(document.getElementsByClassName('extra-section'));
   sections = sections.concat(extraSections);
   
   let height = 0;
   for (let i = 0; i < sections.length - 1; i++) {
-    height += sections[i].clientHeight;
+    height += sections[i].getBoundingClientRect().height;
   }
-  height = height - (landingCirclePosition.height / 2) - landingCircle.offsetParent.offsetTop;
+  height = height - (sectionOnePosition.height / 2);
   const lineConnector = document.getElementsByClassName('line-connector')[0];
   lineConnector.style.height = `${height}px`;
 }
@@ -55,7 +55,7 @@ const setupEndLine = () => {
   const endLine = document.getElementsByClassName('line-end')[0];
   const endLineSvg = endLine.getElementsByTagName('svg')[0];
   endLine.style.width = `${landingCirclePosition.x + (landingCircle.clientWidth * 2)}px`;
-  endLine.style.left = `-${landingCircle.clientWidth}px`;
+  endLine.style.left = `-${landingCircle.clientWidth + 1}px`;
   endLine.style.top = `-${endLineSvg.clientHeight * (3/4)}px`;
 }
 
