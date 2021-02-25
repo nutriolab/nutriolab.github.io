@@ -190,7 +190,7 @@
   color: white;
 
   .headline {
-    display: inline-block;
+    display: inline;
     box-shadow: 0 -7px 0 rgba(255, 255, 255, 1) inset;
     color: $yellow;
   }
@@ -247,7 +247,7 @@ body {
   .section-four-end-line {
     min-height: initial;
   }
-  
+
   .fixed-padded-section.section-four {
     min-height: initial;
 
