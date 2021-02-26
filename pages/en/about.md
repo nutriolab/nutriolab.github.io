@@ -1,6 +1,6 @@
 ---
 permalink: /about-us
-title: About Nutriolab
+title: Nutriolab - About Us
 lang: en
 layout: about
 ---
