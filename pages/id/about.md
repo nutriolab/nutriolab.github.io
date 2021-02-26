@@ -1,6 +1,6 @@
 ---
 permalink: /tentang-kami
-title: Tentang Nutriolab
+title: Nutriolab - Tentang Kami
 lang: id
 layout: about
 ---

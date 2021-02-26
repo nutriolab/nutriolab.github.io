@@ -36,6 +36,7 @@
   background-color: $yellow;
   color: $blue;
   overflow: hidden;
+  min-height: 100vh;
 
   .top {
     margin-bottom: 20px;
@@ -89,6 +90,7 @@
 
 .cta-container {
   padding: 20px 0 40px 0;
+  min-height: initial;
 }
 
 .cta {
