@@ -18,7 +18,7 @@
                 </div>
                 <div class='input'>
                   <input name="fullName" placeholder="{{ form.fields.full_name.placeholder }}"/>
-                  <small id='fullName-helper-message' class='helper-message hide'>Required field</small>
+                  <small id='fullName-helper-message' class='helper-message hide'>{{ form.fields.full_name.error_message }}</small>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@
                 </div>
                 <div class='input'>
                   <input name="email" placeholder="{{ form.fields.email.placeholder }}" />
-                  <small id='email-helper-message' class='helper-message hide'>Required field</small>
+                  <small id='email-helper-message' class='helper-message hide'>{{ form.fields.email.error_message }}</small>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class='input'>
                   <input name="whatsapp-number" placeholder="{{ form.fields.whatsapp_number.placeholder }}" />
-                  <small id='whatsapp-number-helper-message' class='helper-message hide'>Required field</small>
+                  <small id='whatsapp-number-helper-message' class='helper-message hide'>{{ form.fields.whatsapp_number.error_message }}</small>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@
                 </div>
                 <div class='input'>
                   <input name="subject" placeholder="{{ form.fields.subject.placeholder }}" />
-                  <small id='subject-helper-message' class='helper-message hide'>Required field</small>
+                  <small id='subject-helper-message' class='helper-message hide'>{{ form.fields.subject.error_message }}</small>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class='input'>
                   <textarea name='message' placeholder="{{ form.fields.message.placeholder }}" rows="5"></textarea>
-                  <small id='message-helper-message' class='helper-message hide'>Required field</small>
+                  <small id='message-helper-message' class='helper-message hide'>{{ form.fields.message.error_message }}</small>
                 </div>
               </div>
             </div>

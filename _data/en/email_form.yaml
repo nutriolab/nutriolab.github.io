@@ -2,23 +2,26 @@ fields:
   full_name:
     name: Full Name
     placeholder: Type your full name here
+    error_message: Required field
   email:
     name: Email
     placeholder: Type your email here
+    error_message: Required field
   whatsapp_number:
     name: Whatsapp Number
     placeholder: Type your Whatsapp number here
+    error_message: Required field
   business_name:
     name: Business Name
     placeholder: Type your business name here
   subject:
     name: Subject
-    options:
-      - Test
     placeholder: Type your subject here
+    error_message: Required field
   message:
     name: Message
     placeholder: Type your message here
+    error_message: Required field
 send_button_text: SEND
 success_message: Thank you for your email we will be in touch with you :)
 failure_message: Sorry we are unable to send your email at the moment. Please email us directly at nutriolab.id@gmail.com
