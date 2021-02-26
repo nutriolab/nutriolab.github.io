@@ -15,6 +15,15 @@
   }
 }
 
+.modal-content.modal-custom {
+  border-radius: 20px;
+}
+
+.message {
+  color: $blue;
+  font-weight: bolder;
+}
+
 .input-container {
   margin-bottom: 25px;
 

@@ -1,3 +1,4 @@
+{% assign form = site.data[page.lang].email_form %}
 <div class="modal fade" id="modal-email" tabindex="-1" aria-labelledby="email" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
@@ -12,11 +13,11 @@
             <div class='col-12'>
               <div class='input-container'>
                 <div class='label'>
-                  <b>Full Name</b>
+                  <b>{{ form.fields.full_name.name }}</b>
                   <span class='required'>*</span>
                 </div>
                 <div class='input'>
-                  <input name="fullName" placeholder="Type your full name here"/>
+                  <input name="fullName" placeholder="{{ form.fields.full_name.placeholder }}"/>
                   <small id='fullName-helper-message' class='helper-message hide'>Required field</small>
                 </div>
               </div>
@@ -24,11 +25,11 @@
             <div class='col-12'>
               <div class='input-container'>
                 <div class='label'>
-                  <b>Email</b>
+                  <b>{{ form.fields.email.name }}</b>
                   <span class='required'>*</span>
                 </div>
                 <div class='input'>
-                  <input name="email" placeholder="Type your email here" />
+                  <input name="email" placeholder="{{ form.fields.email.placeholder }}" />
                   <small id='email-helper-message' class='helper-message hide'>Required field</small>
                 </div>
               </div>
@@ -36,11 +37,11 @@
             <div class='col-12'>
               <div class='input-container'>
                 <div class='label'>
-                  <b>Whatsapp Number</b>
+                  <b>{{ form.fields.whatsapp_number.name }}</b>
                   <span class='required'>*</span>
                 </div>
                 <div class='input'>
-                  <input name="whatsapp-number" placeholder="Type your Whatsapp number here" />
+                  <input name="whatsapp-number" placeholder="{{ form.fields.whatsapp_number.placeholder }}" />
                   <small id='whatsapp-number-helper-message' class='helper-message hide'>Required field</small>
                 </div>
               </div>
@@ -48,21 +49,21 @@
             <div class='col-12'>
               <div class='input-container'>
                 <div class='label'>
-                  <b>Business Name</b>
+                  <b>{{ form.fields.business_name.name }}</b>
                 </div>
                 <div class='input'>
-                  <input name="business-name" placeholder="Type your business name here" />
+                  <input name="business-name" placeholder="{{ form.fields.business_name.placeholder }}" />
                 </div>
               </div>
             </div>
             <div class='col-12'>
               <div class='input-container'>
                 <div class='label'>
-                  <b>Subject</b>
+                  <b>{{ form.fields.subject.name }}</b>
                   <span class='required'>*</span>
                 </div>
                 <div class='input'>
-                  <input name="subject" placeholder="Type your subject here" />
+                  <input name="subject" placeholder="{{ form.fields.subject.placeholder }}" />
                   <small id='subject-helper-message' class='helper-message hide'>Required field</small>
                 </div>
               </div>
@@ -70,26 +71,40 @@
             <div class='col-12'>
               <div class='input-container'>
                 <div class='label'>
-                  <b>Message</b>
+                  <b>{{ form.fields.message.name }}</b>
                   <span class="required">*</span>
                 </div>
                 <div class='input'>
-                  <textarea name='message' placeholder="Type your message here" rows="5"></textarea>
+                  <textarea name='message' placeholder="{{ form.fields.message.placeholder }}" rows="5"></textarea>
                   <small id='message-helper-message' class='helper-message hide'>Required field</small>
                 </div>
               </div>
             </div>
             <div class='col-12 text-right'>
               <span class="send-button button">
-                {% if page.lang == 'id' %}
-                KIRIM
-                {% else %}
-                SEND
-                {% endif %}
+                {{ form.send_button_text }}
               </button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-email-success" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content modal-custom">
+      <div class="modal-body message">
+        {{ form.success_message }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-email-failure" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content modal-custom">
+      <div class="modal-body message">
+        {{ form.failure_message }}
       </div>
     </div>
   </div>
