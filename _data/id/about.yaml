@@ -1,22 +1,22 @@
-header: About Us
+header: Tentang Kami
 aboutUs:
-  lineOne: We are not just a food consultant. We are the extension of your team. Together we are breathing innovation to your idea and bringing it to life
-  lineTwo: We are driven by our purpose to make it easy for you as a food business owner in South-East Asia to seek any expertise (or any advices) in technical food product development in just one-click away. Our consulting experts will guide you throughout the process in making a delicious, marketable and consumer-centric food product. Your success is exactly the reason why we do what we do now.
+  lineOne: Kami bukan sekedar konsultan pangan. Kami adalah perpanjangan dari tim Anda. Bersama-sama   kita hembuskan nafas inovasi terhadap ide Anda dan membawanya hidup.
+  lineTwo: Kami memiliki tujuan  memudahkan Anda sebagai pemilik bisnis pangan di Asia Tenggara untuk mencari keahlian maupun saran dalam pengembangan produk pangan secara teknis dengan cara yang mudah. Pakar konsultasi kami akan membantu Anda selama proses pembuatan produk pangan yang nikmat, dapat dipasarkan, dan berfokus pada konsumen. Kesuksesan Anda merupakan alasan mengapa kami mengerjakan hal ini. 
   cta:
-    name: check our services
-    link: /services
+    name: Cek layanan kami
+    link: /layanan
 vision:
-  title: Vision
-  content: To empower people to have a better livelihood through innovation and system design.
+  title: Visi
+  content: Memberdayakan masyarakat untuk memiliki kehidupan yang lebih baik melalui inovasi dan desain sistem.
 mission:
-  title: Mission
-  content: To help our clients make distinctive, lasting, and substantial improvements in their performance and to build a great firm that attracts, develops, excites, and retains exceptional people. 
+  title: Misi
+  content: Untuk membantu klien kami mencapai peningkatan kinerja yang nyata, berkesinambungan, serta mendasar, dan untuk membangun perusahaan hebat yang mampu menarik, berkembang, dan memiliki orang-orang hebat.
 cta:
-  name: consult with us
-  link: /contact
+  name: Kontak kami
+  link: /kontak
 values:
-  - Professionalism
-  - Customer - first
-  - Continuous Improvement
-  - Integrity
-  - Collaboration
+  - Profesional
+  - Mengutamakan pelanggan
+  - Perbaikan berkelanjutan
+  - Integritas
+  - Kolaborasi
