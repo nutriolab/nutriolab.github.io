@@ -2,9 +2,9 @@
 layout: base
 assets_css:
   - assets/css/contact.css
-  - assets/css/form.css
+  - assets/css/email_form.css
 assets_js:
-  - assets/js/form.js
+  - assets/js/email_form.js
 ---
 {% assign contact = site.data[page.lang].contact %}
 <div class='fixed-padded-content contact'>
@@ -14,30 +14,30 @@ assets_js:
         <h1 class='title'>{{ contact.header }}</h1>
       </div>
       <div class='col-12'>
-        <div class='part-one d-flex'>
+        <div class='part-one d-flex flex-wrap'>
           <div class='part-container flex-grow-1'>
-            <h2 class='title'>{{ contact.partOne.title }}</h2>
-            {% for message in contact.partOne.messages %}
+            <h2 class='title'>{{ contact.calendly.title }}</h2>
+            {% for message in contact.calendly.messages %}
               <p class='message'>{{ message }}</p>
             {% endfor %}
           </div>
           <div>
-            <span class='button' data-toggle="modal" data-target="#modal-part-one">
-              {{ contact.partOne.buttonText }}
+            <span class='button' data-toggle="modal" data-target="#modal-calendly">
+              {{ contact.calendly.buttonText }}
             </span>
           </div>
         </div>
         <hr>
-        <div class='part-two d-flex'>
+        <div class='part-two d-flex flex-wrap'>
           <div class='part-container flex-grow-1'>
-            <h2 class='title'>{{ contact.partTwo.title }}</h2>
-            {% for message in contact.partTwo.messages %}
+            <h2 class='title'>{{ contact.email_form.title }}</h2>
+            {% for message in contact.email_form.messages %}
               <p class='message'>{{ message }}</p>
             {% endfor %}
           </div>
           <div>
-            <span class='button' data-toggle="modal" data-target="#modal-part-two">
-              {{ contact.partTwo.buttonText }}
+            <span class='button' data-toggle="modal" data-target="#modal-email">
+              {{ contact.email_form.buttonText }}
             </span>
           </div>
         </div>
@@ -46,4 +46,4 @@ assets_js:
   </div>
 </div>
 {% include form/calendly.html %}
-{% include form/email.html %}
+{% include form/email_form.html %}

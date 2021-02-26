@@ -1,0 +1,27 @@
+fields:
+  full_name:
+    name: Nama Lengkap
+    placeholder: Ketik nama lengkap Anda disini
+    error_message: Wajib diisi
+  email:
+    name: Email
+    placeholder: Ketik alamat email Anda disini
+    error_message: Wajib diisi
+  whatsapp_number:
+    name: Nomer Whatsapp
+    placeholder: Ketik nomer Whatsapp Anda disini
+    error_message: Wajib diisi
+  business_name:
+    name: Nama perusahaan
+    placeholder: Ketik nama perusahaan Anda disini
+  subject:
+    name: Topik
+    placeholder: Ketik topik pilihan Anda disini
+    error_message: Wajib diisi
+  message:
+    name: Pesan
+    placeholder: Ketik pesan Anda disini
+    error_message: Wajib diisi
+send_button_text: KIRIM
+success_message: Thank you for your email we will be in touch with you :)
+failure_message: Sorry we are unable to send your email at the moment. Please email us directly at nutriolab.id@gmail.com

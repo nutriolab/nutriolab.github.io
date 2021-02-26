@@ -1,13 +1,14 @@
-header: Contact us
-partOne:
-  title: Chat with us!
+header: Kontak kami
+calendly:
+  title: Ngobrol dengan kami!
+  calendly_link: https://calendly.com/nutriolab-id
   messages:
-    - 'Book a consultation call with us for:'
-    - 1. Complimentary Introductory Call (15 mins) or 
-    - 2. General Consultancy for Products and Technical (50 mins)
-  buttonText: BOOK NOW
-partTwo:
-  title: Email us
+    - 'Jadwalkan konsultasi virtual dengan kami untuk:'
+    - 1. Panggilan Pendahuluan Gratis (15 min), atau
+    - 2. Konsultasi Umum untuk Produk dan Isu Teknis (50 min)
+  buttonText: JADWALKAN SEKARANG
+email_form:
+  title: Email kami
   messages: 
-    - Ask any of your concerns or questions of our services.
-  buttonText: EMAIL US
+    - Ajukan pertanyaan Anda tentang layanan kami.
+  buttonText: EMAIL KAMI

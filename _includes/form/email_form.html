@@ -1,0 +1,111 @@
+{% assign form = site.data[page.lang].email_form %}
+<div class="modal fade" id="modal-email" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class='container'>
+          <div class='row'>
+            <div class='close-container'>
+              <span data-dismiss="modal" aria-label="Close">
+                {% include svg/components/close.svg %}
+              </span>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>{{ form.fields.full_name.name }}</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="fullName" placeholder="{{ form.fields.full_name.placeholder }}"/>
+                  <small id='fullName-helper-message' class='helper-message hide'>{{ form.fields.full_name.error_message }}</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>{{ form.fields.email.name }}</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="email" placeholder="{{ form.fields.email.placeholder }}" />
+                  <small id='email-helper-message' class='helper-message hide'>{{ form.fields.email.error_message }}</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>{{ form.fields.whatsapp_number.name }}</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="whatsapp-number" placeholder="{{ form.fields.whatsapp_number.placeholder }}" />
+                  <small id='whatsapp-number-helper-message' class='helper-message hide'>{{ form.fields.whatsapp_number.error_message }}</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>{{ form.fields.business_name.name }}</b>
+                </div>
+                <div class='input'>
+                  <input name="business-name" placeholder="{{ form.fields.business_name.placeholder }}" />
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>{{ form.fields.subject.name }}</b>
+                  <span class='required'>*</span>
+                </div>
+                <div class='input'>
+                  <input name="subject" placeholder="{{ form.fields.subject.placeholder }}" />
+                  <small id='subject-helper-message' class='helper-message hide'>{{ form.fields.subject.error_message }}</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12'>
+              <div class='input-container'>
+                <div class='label'>
+                  <b>{{ form.fields.message.name }}</b>
+                  <span class="required">*</span>
+                </div>
+                <div class='input'>
+                  <textarea name='message' placeholder="{{ form.fields.message.placeholder }}" rows="5"></textarea>
+                  <small id='message-helper-message' class='helper-message hide'>{{ form.fields.message.error_message }}</small>
+                </div>
+              </div>
+            </div>
+            <div class='col-12 text-right'>
+              <span class="send-button button">
+                {{ form.send_button_text }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-email-success" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content modal-custom">
+      <div class="modal-body message">
+        {{ form.success_message }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-email-failure" tabindex="-1" aria-labelledby="email" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content modal-custom">
+      <div class="modal-body message">
+        {{ form.failure_message }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -43,7 +43,30 @@ const setupForm = () => {
       return;
     }
 
-    console.log(fullName.value, email.value, whatsappNumber.value, businessName.value, subject.value, message.value);
+    const data = {
+      service_id: 'service_owpbfpv',
+      template_id: 'template_uphwfvj',
+      user_id: 'YOUR_USER_IDuser_LuhkWzKItFUM76Q0inNdL',
+      template_params: {
+          full_name: fullName.value,
+          email: email.value,
+          whatsapp_number: whatsappNumber.value,
+          business_name: businessName.value,
+          subject: subject.value,
+          message: message.value
+      }
+    };
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        $('#modal-email').modal('hide');
+        $('#modal-email-success').modal('show');
+      }).fail(function(error) {
+        $('#modal-email').modal('hide');
+        $('#modal-email-failure').modal('show');
+    });
   };
 
   const setHelperMessage = (inputElement, isDisplayed) => {

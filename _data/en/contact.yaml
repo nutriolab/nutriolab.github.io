@@ -1,12 +1,13 @@
 header: Contact us
-partOne:
+calendly:
   title: Chat with us!
+  calendly_link: https://calendly.com/nutriolab-id
   messages:
     - 'Book a consultation call with us for:'
     - 1. Complimentary Introductory Call (15 mins) or 
     - 2. General Consultancy for Products and Technical (50 mins)
   buttonText: BOOK NOW
-partTwo:
+email_form:
   title: Email us
   messages: 
     - Ask any of your concerns or questions of our services.

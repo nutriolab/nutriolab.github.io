@@ -3,81 +3,80 @@ packages:
   - name:
     options:
       - title:
-        name: Free Introductory Call
+        name: Panggilan Pendahuluan Gratis
         description: 
-          normal: It’s FREE! Tell us your problem and we are ready to help you! Sign up now to get your free call!
+          normal: Gratis! Beri tahu kami masalah Anda dan kami siap membantu Anda! Daftar sekarang untuk mendapatkan panggilan gratis!
         services:
-          - ++ Consultation (15 min)
+          - ++ Konsultasi (15 min)
         price:
-          text: 'Sign Up Now!'
+          text: Daftar sekarang!
         goTo: calendly
       - title:
-        name: General Consultancy
+        name: Konsultasi Umum
         description: 
-          normal: Consult up to 50 mins for more specific technical issues with our tailored specialist. You will get a summary of the consultancy meeting.
+          normal: Konsultasi hingga 50 menit terkait permasalahan teknis yang lebih spesifik dengan spesialis kami. Anda akan mendapatkan ringkasan dari pertemuan konsultasi.
         services:
-          - ++ Consultation (50 min)
-          - ++ Report Delivery
+          - ++ Konsultasi (50 min)
         price:
           text: '250'
           cardinal: k
         goTo: calendly
-  - name: Technical Services
+  - name: Layanan Teknis
     options:
       - title: T01
-        name: Nutrition Labelling & Claim
+        name:  Label dan Klaim Gizi
         description: 
-          bold: Now you can put the nutrition label on your product! Showcase how nutritious your product is! 
-          normal: Nutrition facts label, claim suggestions
+          bold: Sekarang Anda bisa memberikan label gizi pada produk Anda! Tunjukkan betapa bergizinya produk Anda!
+          normal: Label, klaim, dan rekomendasi nilai gizi.
         price:
-          text: 'contact us for pricing'
+          text: 'Hubungi kami untuk harga'
         goTo: email
       - title: T02
-        name: Product Profiling
+        name: Profil Produk
         description: 
-          bold: Understand your product like understanding your girlfriend! 
-          normal: Risk profile, quality & safety assessment, sensory evaluation, shelf-life study, packaging selection
+          bold: Pahami produk Anda seperti memahami pacar Anda!
+          normal: Profil risiko, penilaian kualitas & keamanan pangan, evaluasi sensori, studi umur simpan, pemilihan kemasan.
         price:
-          text: 'contact us for pricing'
+          text: 'Hubungi kami untuk harga'
         goTo: email
       - title: T03
-        name: Process Optimization Roadmap
+        name: Roadmap Optimasi Proses
         description: 
-          bold: Save up your time and money by optimizing your process design! 
-          normal: Standardized process, process parameter & specification, HACCP plan
+          bold: Hemat waktu dan uang Anda dengan mengoptimalkan desain proses Anda!
+          normal: Proses standar, parameter & spesifikasi proses, rancangan HACCP
         price:
-          text: 'contact us for pricing'
+          text: 'Hubungi kami untuk harga'
         goTo: email
       - title: T04
-        name: Production Scale-up Roadmap
+        name: Roadmap Peningkatan Skala Produksi
         description: 
-          bold: Your business is growing quickly? Time to scale it up! Now you can turn your garage into a small food factory!
-          normal: production management, standardized process, process parameter & specification, HACCP Plan 
+          bold: Bisnis Anda berkembang pesat? Saatnya untuk meningkatkannya! Sekarang Anda dapat mengubah garasi Anda menjadi industri pangan kecil!
+          normal: Manajemen produksi, standar proses, parameter & spesifikasi proses, rencana HACCP
         price:
-          text: 'contact us for pricing'
+          text: 'Hubungi kami untuk harga'
         goTo: email
-  - name: Certification Planning & Regulatory Services
+  - name: Layanan perencanaan sertifikasi dan regulasi
     options:
       - title: R01
-        name: Halal Certification Roadmap
+        name: Roadmap Sertifikasi Halal
         description: 
-          bold: Be more confident in your product by complying to the standard!
-          normal: Halal certification requirements and planning 
+          bold: Lebih percaya diri terhadap produk Anda dengan mematuhi standar!
+          normal: Perencanaan dan persyaratan sertifikasi halal.
         price:
-          text: 'contact us for pricing'
+          text: 'Hubungi kami untuk harga'
         goTo: email
       - title: R02
-        name: Other Regulatory Certification
+        name: Sertifikasi Regulasi Lainnya
         description: 
-          bold: We’re working on it, we’ll bring it to you as soon as possible.
-          normal: Feel free to contact us if you’re interested
+          bold: Kami sedang mengerjakannya, kami akan menginformasikan Anda segera.
+          normal: Jangan ragu untuk menghubungi kami jika Anda tertarik.
         price:
-          text: 'coming soon'
+          text: 'segera hadir'
         goTo: email
 postPackages:
-  title: Other inquiries
-  message: Don’t see you issues up there? Let us know through complementary introductory call or general inquires.
+  title: Pertanyaan lainnya
+  message: Permasalahan Anda tidak tertera pada informasi di atas? Beri tahu kami melalui panggilan pendahuluan gratis atau pertanyaan umum.
 cta:
-  name: consult with us
-  link: /contact
+  name: konsultasikan dengan kami
+  link: /kontak
 ---
