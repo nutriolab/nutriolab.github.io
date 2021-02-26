@@ -46,7 +46,7 @@ const setupForm = () => {
     const data = {
       service_id: 'service_owpbfpv',
       template_id: 'template_uphwfvj',
-      user_id: 'YOUR_USER_IDuser_LuhkWzKItFUM76Q0inNdL',
+      user_id: 'user_LuhkWzKItFUM76Q0inNdL',
       template_params: {
           full_name: fullName.value,
           email: email.value,
