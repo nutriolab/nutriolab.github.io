@@ -8,7 +8,7 @@ fields:
     placeholder: Ketik alamat email Anda disini
     error_message: Wajib diisi
   whatsapp_number:
-    name: Whatsapp Number
+    name: Nomer Whatsapp
     placeholder: Ketik nomer Whatsapp Anda disini
     error_message: Wajib diisi
   business_name:
