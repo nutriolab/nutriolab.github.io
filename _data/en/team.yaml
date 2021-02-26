@@ -1,4 +1,7 @@
 headline: Meet our team!
+title:
+  education: Education
+  expertise: Expertise
 groups:
   - name: Founders
     members:

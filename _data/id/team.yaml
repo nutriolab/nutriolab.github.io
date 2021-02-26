@@ -1,30 +1,33 @@
-headline: Meet our team!
+headline: Temui tim kami!
+title:
+  education: Pendidikan
+  expertise: Keahlian
 groups:
   - name: Founders
     members:
       - name: Zenia Adiwijaya
         image: /assets/media/team/zadiwijaya.jpg
         education: M.Sc. System Design & Management Candidate (MIT); M.B.A / B.Sc. Food Science (Iowa State University).
-        expertise: System management, food science, product development & formulation, food Operation & supply chain, sensory science, procurement, commercialization.
+        expertise: Sistem manajemen, ilmu pangan, formulasi dan pengembangan produk, operasi dan rantai pasok pangan, ilmu sensori, pembelian, komersialisasi
       - name: Stella Alinneshia
         image: /assets/media/team/salinneshia.jpg
         education: B.Sc (IPB University); M.Sc Food Technology - Product Design (Wageningen University and Research)
-        expertise: Product design, product and consumer research, market research, business analysis and strategy, program and project management, relationship and stakeholder management.
+        expertise: Desain produk, riser produk dan konsumen, riset pasar, analisis dan strategi bisnis, manajemen program dan proyek, hubungan dan manajemen stakeholder.
       - name: Cynthia Andriani
         image: /assets/media/team/candriani.jpg
         education: B.Sc (IPB University); M.Sc Food Science and Nutrition (Lund University).
-        expertise: Food engineering, dairy products, plant-based food, research,  food safety and quality, food processing, food system integration, package material, community development
+        expertise: Teknik pangan, produk berbasis susu, riset, keamanan dan kualitas pangan, proses pangan, integrasi sistem pangan, material kemasan, pemberdayaan masyarakat 
       - name: Era Premakara
         image: /assets/media/team/apremakara.jpg
         education: BFA (Parsons The New School for Design - NYC) ; M.Arch - Creative Computing (Univeristy College London)
-        expertise: User and market research analysis, concept and product design development, project management, digital content creator.
-  - name: Our Consultants
+        expertise: Analisis pengguna dan riset pasar, pengembangan konsep dan desain produk, manajemen proyek, konten digital 
+  - name: Konsultan kami
     members:
       - name: Sylvia Indriani
         image: /assets/media/team/sindriani.jpg
         education: Ph.D candidate in Food Science / M.Sc (King Mongkut’s Institute of technology Ladkrabang) 
-        expertise: Food science research, product development & formulation, food analysis, food operation & supply chain, sensory science.
+        expertise: Riset ilmu pangan, formulasi dan pengembangan produk, analisis pangan, operasi dan rantai pasok pangan, ilmu sensori
       - name: Claudia Adiwijaya
         image: /assets/media/team/cadiwijaya.jpg
         education: Bachelor of Industrial Design (Emily Carr University of Art and Design)
-        expertise: Concept and product development, design reseach, branding and visual element, 3D visual modelling, and mediagrapher.
+        expertise: Pengembangan konsep dan produk, desain riset, elemen branding dan visual, modelling visual secara 3D, dan pembuatan media
