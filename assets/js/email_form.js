@@ -78,3 +78,10 @@ const setupForm = () => {
     }
   }
 }
+
+$(window).on("load", function() {
+  setupForm();
+});
+$(window).resize(function() {
+  setupForm();
+})

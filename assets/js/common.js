@@ -35,13 +35,9 @@ const commonSetup = () => {
   }
 };
 
-const bootstrap = () => {
-  commonSetup();
-  typeof setup !== 'undefined' && setup();
-  typeof setupForm !== 'undefined' && setupForm();
-}
-
 $(window).on("load", function() {
-  bootstrap();
+  commonSetup();
 });
-window.onresize = bootstrap;
+$(window).resize(function() {
+  commonSetup();
+})

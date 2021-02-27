@@ -32,3 +32,10 @@ const setOptionsVisibility = (options, hide) => {
     options.className = options.className.replace(' hide', '');
   }
 }
+
+$(window).on("load", function() {
+  setup();
+});
+$(window).resize(function() {
+  setup();
+})
