@@ -41,7 +41,7 @@ const bootstrap = () => {
   typeof setupForm !== 'undefined' && setupForm();
 }
 
-$(document).ready(function() {
+$(window).on("load", function() {
   bootstrap();
 });
 window.onresize = bootstrap;

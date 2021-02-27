@@ -42,15 +42,15 @@ assets_js:
             <div class='slice-container'>
               <div class='left'>
                 <div class='slice-one'>
-                  {% include svg/section_two/slice-one.svg %}
+                  <!-- {% include svg/section_two/slice-one.svg %} -->
                 </div>
               </div>
               <div class='right'>
                 <div class='slice slice-two'>
-                  {% include svg/section_two/slice-two.svg %}
+                  <!-- {% include svg/section_two/slice-two.svg %} -->
                 </div>
                 <div class='slice slice-three'>
-                  {% include svg/section_two/slice-three.svg %}
+                  <!-- {% include svg/section_two/slice-three.svg %} -->
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ assets_js:
   <div class='top container'>
     <div class="row vp-container align-items-center">
       <div class="col-12 col-md-7 order-2 order-md-1">
-        <div class='left-container pr-5'>
+        <div class='left-container content-with-line'>
           {% for do in home.sectionThree.whatDoWeDo %}
             <div class="do row d-flex align-items-center">
               <div class='text order-1 order-md-0 col-12 col-md-9'>
@@ -123,7 +123,7 @@ assets_js:
         </div>
       </div>
       <div class="col col-sm-12 col-md-5 order-1 order-md-2">
-        <div class='right-container pl-0 pl-md-3 mb-5 mb-md-0'>
+        <div class='right-container pl-0 pl-md-3 mb-5 mb-md-0 content-with-line'>
           <h1 class='headline'>{{ home.sectionThree.title }}</h1>
         </div>
       </div>
@@ -144,7 +144,7 @@ assets_js:
       </b>
     </a>
   </div>
-  <div class='top container'>
+  <div class='top container content-with-line'>
     <div class="row flex-column align-items-center">
       <div class='text-container mb-5'>
         <h2 class='alata'>{{ home.sectionFour.textFirstLine }}</h2>

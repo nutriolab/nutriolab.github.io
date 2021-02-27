@@ -113,7 +113,7 @@ a:hover {
 }
 
 .content-with-line {
-  padding-right: $line-width + 5px;
+  padding-right: $line-width + 10px;
 }
 
 body {
@@ -218,7 +218,7 @@ body {
 
 @media (max-width: $smallBreakpoint) {
   .content-with-line {
-    padding-right: $line-width + 5px;
+    padding-right: $line-width + 10px;
   }
 
   #lang-container {
