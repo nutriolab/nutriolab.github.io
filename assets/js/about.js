@@ -12,6 +12,6 @@ const setupLine = () => {
 
 const setupOutOfFlowCta = () => {
   const cta = document.getElementsByClassName('cta-2')[0];
-  const visionMission = document.getElementsByClassName('vision-mission')[0];
-  cta.style.top = `${visionMission.getBoundingClientRect().bottom + 50}px`;
+  const ctaContainer = $('.cta-container');
+  cta.style.top = `${ctaContainer.offset().top + (ctaContainer.outerHeight() / 2)}px`;
 }
