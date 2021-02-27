@@ -15,3 +15,10 @@ const setupOutOfFlowCta = () => {
   const ctaContainer = $('.cta-container');
   cta.style.top = `${ctaContainer.offset().top + (ctaContainer.outerHeight() / 2)}px`;
 }
+
+$(window).on("load", function() {
+  setup();
+});
+$(window).resize(function() {
+  setup();
+})

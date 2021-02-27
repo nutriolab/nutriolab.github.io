@@ -8,3 +8,10 @@ const setupLine = () => {
 const setup = () => {
   setupLine();  
 }
+
+$(window).on("load", function() {
+  setup();
+});
+$(window).resize(function() {
+  setup();
+})

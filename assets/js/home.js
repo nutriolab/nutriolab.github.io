@@ -152,3 +152,10 @@ const changeSocialMediaColors = color => {
     }
   }
 }
+
+$(window).on("load", function() {
+  setup();
+});
+$(window).resize(function() {
+  setup();
+})
