@@ -61,6 +61,10 @@
   background-color: $yellow;
   color: $blue;
 
+  .left-container {
+    overflow-x: hidden;
+  }
+
   .right-container {
     .headline {
       font-weight: bold;
