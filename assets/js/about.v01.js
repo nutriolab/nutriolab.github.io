@@ -6,8 +6,8 @@ const setup = () => {
 const setupLine = () => {
   const line = document.getElementsByClassName('line-connector')[0];
   line.style.height = `${document.body.clientHeight}px`;
-  const topSection = document.getElementsByClassName('top')[0];
-  line.style.left = `${topSection.getBoundingClientRect().right - line.clientWidth}px`; 
+  const topSection = $('.about .container');
+  line.style.left = `${topSection[0].getBoundingClientRect().right - line.clientWidth}px`; 
 }
 
 const setupOutOfFlowCta = () => {
