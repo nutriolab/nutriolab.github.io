@@ -43,7 +43,8 @@ const setupConnectorLine = () => {
   
   let height = 0;
   for (let i = 0; i < sections.length ; i++) {
-    height += sections[i].getBoundingClientRect().height;
+    const section = sections[i].getBoundingClientRect();
+    height += section.height;
   }
   height = height - (circle.offsetParent.clientHeight / 2) - circle.offsetParent.offsetTop;
   const lineConnector = document.getElementsByClassName('line-connector')[0];
