@@ -61,10 +61,6 @@
   background-color: $yellow;
   color: $blue;
 
-  .left-container {
-    overflow-x: hidden;
-  }
-
   .right-container {
     .headline {
       font-weight: bold;
@@ -72,13 +68,13 @@
   }
 
   .testimony-col {
-    overflow: hidden;
     padding-bottom: 20px;
   }
 
   .box {
     position: relative;
-    overflow-y: clip;
+    overflow: hidden;
+    padding: 10px;
 
     .slice-container {
       margin-right: 30px;
