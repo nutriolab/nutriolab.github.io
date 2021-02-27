@@ -32,20 +32,20 @@ sectionTwo:
 sectionThree:
   title: Apa yang kita lakukan
   whatDoWeDo:
-    - name: Food Science
-      description: High level food science based Product Development Process (PDP)
+    - name: Ilmu Pangan
+      description: Proses pengembangan produk berbasis pemahaman teknis secara umum
       includeSvg: svg/section_three/food_science.svg
-    - name: Food Processing
-      description: Small and mind-pilot production and processing management
+    - name: Proses Pangan
+      description: Kerangka optimasi proses dan produksi skala kecil dan menengah
       includeSvg: svg/section_three/food_processing.svg
-    - name: Food Packaging
-      description: Packaging options, product claims and shelf life
+    - name: Profil Pangan
+      description: Kualitas dan keamanan produk, analisis sensori, umur simpan, dan pemilihan kemasan
       includeSvg: svg/section_three/food_packaging.svg
-    - name: Nutrition
-      description: Nutrition values, allergen, and functionalities
+    - name: Nutrisi Pangan
+      description: Nilai gizi, allergen, rekomendasi pelabelan/klaim pangan
       includeSvg: svg/section_three/nutrition.svg
-    - name: Consumer Study
-      description: Sensory study, market research, and high-level business development
+    - name: Peraturan Pangan
+      description: Perencanaan sertifikasi Halal, HACCP, dan peraturan/standar pangan lainnya
       includeSvg: svg/section_three/consumer_study.svg
 sectionFour:
   textFirstLine: Kami bukan sekedar konsultan pangan
@@ -54,4 +54,4 @@ sectionFour:
     name: Cek layanan kami
     link: /layanan
   affiliates:
-    title: our team affiliations & experiences
+    title: afiliasi dan pengalaman tim kami
