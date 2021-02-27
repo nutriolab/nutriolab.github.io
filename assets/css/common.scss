@@ -112,6 +112,10 @@ a:hover {
   transition: background-color $transitionDuration;
 }
 
+.content-with-line {
+  padding-right: $line-width + 5px;
+}
+
 body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -213,6 +217,10 @@ body {
 }
 
 @media (max-width: $smallBreakpoint) {
+  .content-with-line {
+    padding-right: $line-width + 5px;
+  }
+
   #lang-container {
     top: $m-total-padding;
     right: $m-total-padding;
