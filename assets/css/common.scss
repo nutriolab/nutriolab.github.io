@@ -59,7 +59,7 @@ a:hover {
   display: inline-block;
   position: fixed;
   top: $total-padding;
-  right: $total-padding;
+  right: $app-container-padding;
   vertical-align: middle;
   padding: 5px;
   z-index: 3;
@@ -112,6 +112,10 @@ a:hover {
   transition: background-color $transitionDuration;
 }
 
+.content-with-line {
+  padding-right: $line-width + 10px;
+}
+
 body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -125,8 +129,8 @@ body {
 
     .logo-container {
       display: inline-block;
-      max-width: $logo-width;
-      max-height: $logo-height;
+      width: $logo-width;
+      height: $logo-height;
 
       svg {
         width: 100%;
@@ -176,7 +180,7 @@ body {
     z-index: 1;
     position: fixed;
     bottom: 0;
-    padding: $total-padding;
+    padding: $app-container-padding;
     padding-bottom: $total-footer;
 
     .social-media {
@@ -213,6 +217,10 @@ body {
 }
 
 @media (max-width: $smallBreakpoint) {
+  .content-with-line {
+    padding-right: $line-width + 10px;
+  }
+
   #lang-container {
     top: $m-total-padding;
     right: $m-total-padding;
@@ -224,8 +232,8 @@ body {
       padding-left: $m-app-container-padding;
 
       .logo-container {
-        max-width: $m-logo-width;
-        max-height: $m-logo-height;
+        width: $m-logo-width;
+        height: $m-logo-height;
       }
     }
 

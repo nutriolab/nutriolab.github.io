@@ -39,11 +39,19 @@ How to update:
 - Find the variable you want to update and update the value (Variable names varies depending on the page, search the value you want to update and if it is there, then it is editable)
 - Click "Commit Changes" and make sure "Commit directly to the 'main' branch" is checked.
 
-5. [Social Media](#social-media)
+5. [Form](#form)
+- Go to [_data](/_data) folder
+- Select the language (en/id) folder
+- Go to `email_form.yaml` file
+- Find the edit button
+- Find the variable you want to update and update the value
+- Click "Commit Changes" and make sure "Commit directly to the 'main' branch" is checked.
+
+6. [Social Media](#social-media)
 - Go to [social media file](/_data/social_media.yaml)
 - Update link of the social media you want to update
 
-6. [Affiliates](#affiliates)
+7. [Affiliates](#affiliates)
 - Go to [affiliates file](/_data/affiliates.yaml)
 - Add/remove/update affiliate(s)
 
