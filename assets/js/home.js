@@ -7,7 +7,6 @@ const setup = () => {
 
 const setupSectionTwo = () => {
   const box = document.getElementsByClassName('box')[0];
-  const testimonyContainer = document.getElementsByClassName('testimony-container')[0];
 
   // Position slices
   const boxPosition = box.getBoundingClientRect();

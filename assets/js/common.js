@@ -38,6 +38,3 @@ const commonSetup = () => {
 $(window).on("load", function() {
   commonSetup();
 });
-$(window).resize(function() {
-  commonSetup();
-})

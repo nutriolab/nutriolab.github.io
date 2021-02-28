@@ -36,6 +36,3 @@ const setOptionsVisibility = (options, hide) => {
 $(window).on("load", function() {
   setup();
 });
-$(window).resize(function() {
-  setup();
-})
