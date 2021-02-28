@@ -22,7 +22,7 @@ assets_js:
             {% endfor %}
           </div>
           <div>
-            <span class='button' data-toggle="modal" data-target="#modal-calendly">
+            <span class='button' data-toggle="modal" data-target="#modal-calendly-">
               {{ contact.calendly.buttonText }}
             </span>
           </div>
@@ -45,5 +45,5 @@ assets_js:
     </div>
   </div>
 </div>
-{% include form/calendly.html %}
+{% include form/calendly.html link=contact.calendly.calendly_link %}
 {% include form/email_form.html %}

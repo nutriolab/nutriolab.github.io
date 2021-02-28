@@ -1,4 +1,7 @@
 header: Services
+calendly:
+  15min: https://calendly.com/nutriolab-id/15min
+  50min: https://calendly.com/nutriolab-id/50min
 packages:
   - name:
     options:
@@ -10,7 +13,7 @@ packages:
           - ++ Consultation (15 min)
         price:
           text: 'Sign Up Now!'
-        goTo: calendly
+        calendly_type: 15min
       - title:
         name: General Consultancy
         description: 
@@ -21,7 +24,7 @@ packages:
         price:
           text: '250'
           cardinal: k
-        goTo: calendly
+        calendly_type: 50min
   - name: Technical Services
     options:
       - title: T01
@@ -31,7 +34,7 @@ packages:
           normal: Nutrition facts label, claim suggestions
         price:
           text: 'contact us for pricing'
-        goTo: email
+        email: true
       - title: T02
         name: Product Profiling
         description: 
@@ -39,7 +42,7 @@ packages:
           normal: Risk profile, quality & safety assessment, sensory evaluation, shelf-life study, packaging selection
         price:
           text: 'contact us for pricing'
-        goTo: email
+        email: true
       - title: T03
         name: Process Optimization Roadmap
         description: 
@@ -47,7 +50,7 @@ packages:
           normal: Standardized process, process parameter & specification, HACCP plan
         price:
           text: 'contact us for pricing'
-        goTo: email
+        email: true
       - title: T04
         name: Production Scale-up Roadmap
         description: 
@@ -55,7 +58,7 @@ packages:
           normal: production management, standardized process, process parameter & specification, HACCP Plan 
         price:
           text: 'contact us for pricing'
-        goTo: email
+        email: true
   - name: Certification Planning & Regulatory Services
     options:
       - title: R01
@@ -65,7 +68,7 @@ packages:
           normal: Halal certification requirements and planning 
         price:
           text: 'contact us for pricing'
-        goTo: email
+        email: true
       - title: R02
         name: Other Regulatory Certification
         description: 
@@ -73,7 +76,7 @@ packages:
           normal: Feel free to contact us if you’re interested
         price:
           text: 'coming soon'
-        goTo: email
+        email: true
 postPackages:
   title: Other inquiries
   message: Don’t see you issues up there? Let us know through complementary introductory call or general inquires.

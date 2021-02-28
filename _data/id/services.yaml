@@ -1,4 +1,7 @@
 header: Layanan
+calendly:
+  15min: https://calendly.com/nutriolab-id/15min
+  50min: https://calendly.com/nutriolab-id/50min
 packages:
   - name:
     options:
@@ -10,7 +13,7 @@ packages:
           - ++ Konsultasi (15 min)
         price:
           text: Daftar sekarang!
-        goTo: calendly
+        calendly_type: 15min
       - title:
         name: Konsultasi Umum
         description: 
@@ -20,7 +23,7 @@ packages:
         price:
           text: '250'
           cardinal: k
-        goTo: calendly
+        calendly_type: 50min
   - name: Layanan Teknis
     options:
       - title: T01
@@ -30,7 +33,7 @@ packages:
           normal: Label, klaim, dan rekomendasi nilai gizi.
         price:
           text: 'Hubungi kami untuk harga'
-        goTo: email
+        email: true
       - title: T02
         name: Profil Produk
         description: 
@@ -38,7 +41,7 @@ packages:
           normal: Profil risiko, penilaian kualitas & keamanan pangan, evaluasi sensori, studi umur simpan, pemilihan kemasan.
         price:
           text: 'Hubungi kami untuk harga'
-        goTo: email
+        email: true
       - title: T03
         name: Roadmap Optimasi Proses
         description: 
@@ -46,7 +49,7 @@ packages:
           normal: Proses standar, parameter & spesifikasi proses, rancangan HACCP
         price:
           text: 'Hubungi kami untuk harga'
-        goTo: email
+        email: true
       - title: T04
         name: Roadmap Peningkatan Skala Produksi
         description: 
@@ -54,7 +57,7 @@ packages:
           normal: Manajemen produksi, standar proses, parameter & spesifikasi proses, rencana HACCP
         price:
           text: 'Hubungi kami untuk harga'
-        goTo: email
+        email: true
   - name: Layanan perencanaan sertifikasi dan regulasi
     options:
       - title: R01
@@ -64,7 +67,7 @@ packages:
           normal: Perencanaan dan persyaratan sertifikasi halal.
         price:
           text: 'Hubungi kami untuk harga'
-        goTo: email
+        email: true
       - title: R02
         name: Sertifikasi Regulasi Lainnya
         description: 
@@ -72,7 +75,7 @@ packages:
           normal: Jangan ragu untuk menghubungi kami jika Anda tertarik.
         price:
           text: 'segera hadir'
-        goTo: email
+        email: true
 postPackages:
   title: Pertanyaan lainnya
   message: Permasalahan Anda tidak tertera pada informasi di atas? Beri tahu kami melalui panggilan pendahuluan gratis atau pertanyaan umum.

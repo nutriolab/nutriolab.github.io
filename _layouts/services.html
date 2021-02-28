@@ -34,9 +34,9 @@ assets_js:
                 <div class='row d-flex align-items-stretch mb-3'>
                   {% for option in package.options %}
                     <div class='col-xs-12 col-sm-6 col-md-4 mb-3'>
-                      {% if option.goTo == 'calendly' %}
-                      <div class='option d-flex flex-column' data-toggle="modal" data-target="#modal-calendly">
-                      {% else if option.goTo == 'email' %}
+                      {% if option.calendly_type %}
+                      <div class='option d-flex flex-column' data-toggle="modal" data-target="#modal-calendly-{{ option.calendly_type | default: '' }}">
+                      {% else if option.email %}
                       <div class='option d-flex flex-column' data-toggle="modal" data-target="#modal-email">
                       {% else %}
                       <div class='option d-flex flex-column'>
@@ -106,5 +106,9 @@ assets_js:
     </div>
   </div>
 </div>
-{% include form/calendly.html %}
+{% for schedule in services.calendly %}
+{% assign id = schedule[0] %}
+{% assign link = schedule[1] %}
+  {% include form/calendly.html id=id link=link %}
+{% endfor %}
 {% include form/email_form.html %}
