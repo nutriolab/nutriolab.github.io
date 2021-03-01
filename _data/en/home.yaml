@@ -33,19 +33,19 @@ sectionThree:
   title: What do we do
   whatDoWeDo:
     - name: Food Science
-      description: High level food science based Product Development Process (PDP)
+      description: High level technical comprehension based product development process
       includeSvg: svg/section_three/food_science.svg
     - name: Food Processing
-      description: Small and mind-pilot production and processing management
+      description: Small and mid-pilot scale production & process optimization roadmap 
       includeSvg: svg/section_three/food_processing.svg
-    - name: Food Packaging
-      description: Packaging options, product claims and shelf life
+    - name: Food Profiling
+      description: Product quality & safety, sensory study, shelf-life study, packaging selection
       includeSvg: svg/section_three/food_packaging.svg
-    - name: Nutrition
-      description: Nutrition values, allergen, and functionalities
+    - name: Food Nutrition
+      description: Nutrition value, allergen, labelling/claims suggestion
       includeSvg: svg/section_three/nutrition.svg
-    - name: Consumer Study
-      description: Sensory study, market research, and high-level business development
+    - name: Food Regulation
+      description: Certification planning for Halal, HACCP and other regulation/standard
       includeSvg: svg/section_three/consumer_study.svg
 sectionFour:
   textFirstLine: we are not just your food consultant
