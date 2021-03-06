@@ -107,7 +107,7 @@
 
   .cta {
     color:white;
-    box-shadow: 0 -5px 0 $yellow inset;
+    box-shadow: 0 -7px 0 $yellow inset;
     position: absolute;
     bottom: 20%;
     right: 0;
@@ -116,6 +116,10 @@
     padding-right: 10px;
     font-weight: bold;
     font-size: 24px;
+    
+    a {
+      box-shadow: 0 -5px 0 $yellow inset;
+    }
   }
 }
 
