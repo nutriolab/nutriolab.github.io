@@ -1,7 +1,7 @@
 header: Layanan
 calendly:
-  15min: https://calendly.com/nutriolab-id/15min
-  50min: https://calendly.com/nutriolab-id/50min
+  15min: https://calendly.com/nutriolab-id/15min-free-introductory-consultation
+  50min: https://calendly.com/nutriolab-id/60min-general-consultation
 packages:
   - name:
     options:
