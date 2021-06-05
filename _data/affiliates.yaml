@@ -1,11 +1,7 @@
-- name: MIT
-  source: /assets/media/affiliates/Logo-MIT.png
 - name: UCL
   source: /assets/media/affiliates/Logo-UCL.png
 - name: Lund
   source: /assets/media/affiliates/Logo-Lund.png
-- name: Tetrapak
-  source: /assets/media/affiliates/Logo-Tetrapak.png
 - name: MIT Sandbox
   source: /assets/media/affiliates/Logo-Sandbox.png
 - name: Wageningen
