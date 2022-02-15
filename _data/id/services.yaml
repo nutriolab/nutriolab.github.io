@@ -23,7 +23,6 @@ packages:
           - ++ Report 
         price:
           text: 'Kontak kami'
-          cardinal: 
         calendly_type: 50min
   - name: Layanan Teknis
     options:
