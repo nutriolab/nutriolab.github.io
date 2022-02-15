@@ -21,8 +21,8 @@ packages:
         services:
           - ++ Konsultasi (50 min)
         price:
-          text: '385'
-          cardinal: k
+          text: ''
+          cardinal: kontak kami
         calendly_type: 50min
   - name: Layanan Teknis
     options:
