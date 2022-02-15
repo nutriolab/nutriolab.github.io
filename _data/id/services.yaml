@@ -20,8 +20,9 @@ packages:
           normal: Konsultasi hingga 50 menit terkait permasalahan teknis yang lebih spesifik dengan spesialis kami. Anda akan mendapatkan ringkasan dari pertemuan konsultasi.
         services:
           - ++ Konsultasi (50 min)
+          - ++ Report 
         price:
-          text:
+          text: Kontak kami
           cardinal: kontak kami
         calendly_type: 50min
   - name: Layanan Teknis
