@@ -22,7 +22,7 @@ packages:
           - ++ Konsultasi (50 min)
           - ++ Report 
         price:
-          text: 'Kontak kami'
+          text: Kontak kami
         calendly_type: 50min
   - name: Layanan Teknis
     options:
