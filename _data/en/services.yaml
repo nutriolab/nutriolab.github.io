@@ -22,8 +22,8 @@ packages:
           - ++ Consultation (50 min)
           - ++ Report Delivery
         price:
-          text: '385'
-          cardinal: k
+          text: ''
+          cardinal: contact us
         calendly_type: 50min
   - name: Technical Services
     options:
